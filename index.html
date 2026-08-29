@@ -1497,7 +1497,7 @@
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#contact">Start a project</a>
-            <a class="btn btn-ghost btn-cv" href="REUBEN_NYABERI_SIOJA CURRICULUM VITAE.pdf" download data-role="download-cv">Download CV 🔒</a>
+            <a class="btn btn-ghost btn-cv" href="#secureAccess" data-role="download-cv">Download CV 🔒</a>
             <a class="btn btn-ghost" href="#work">View my work</a>
           </div>
         </div>
@@ -1518,8 +1518,8 @@
             <p class="eyebrow">About</p>
             <div class="about-portrait">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=700&q=80"
-                alt="Portrait placeholder for Reuben Nyaberi"
+                src="reuben_image.jpeg"
+                alt="Portrait of Reuben Nyaberi"
               />
             </div>
             <p class="about-cap">ICT · Software · Data — based on the Kenyan coast</p>
@@ -2115,7 +2115,7 @@
                 <span class="lbl">Web</span>
                 <span class="val">reubennyaberi.com</span>
               </a>
-              <a class="c-link btn-cv" href="REUBEN_NYABERI_SIOJA CURRICULUM VITAE.pdf" download data-role="download-cv">
+              <a class="c-link btn-cv" href="#secureAccess" data-role="download-cv">
                 <span class="lbl">Resume</span>
                 <span class="val">Download CV 🔒</span>
               </a>
@@ -2167,7 +2167,7 @@
           </div>
           <div class="secure-unlocked" id="secureUnlocked" hidden>
             <p class="secure-ok">✓ Access granted. Your downloads are now unlocked.</p>
-            <a class="btn btn-primary" href="REUBEN_NYABERI_SIOJA CURRICULUM VITAE.pdf" download data-role="download-cv">
+            <a class="btn btn-primary" href="#secureAccess" data-role="download-cv">
               Download CV ↓
             </a>
           </div>
@@ -2665,36 +2665,44 @@
       });
 
       // ---------- Password-protected resume ----------
-      // CHANGE THIS to your own access code.
-      var CV_PASSWORD = "reubennyaberi2000";
-      var CV_HINT = "reubennyaberi2000";
-
       var pwInput = document.getElementById("pwInput");
       var pwUnlock = document.getElementById("pwUnlock");
       var pwHint = document.getElementById("pwHintText");
       var pwForm = document.getElementById("secureForm");
       var pwUnlocked = document.getElementById("secureUnlocked");
 
-      function unlockCV() {
+      function unlockCV(pwd) {
+        var fileUrl = "REUBEN_NYABERI_SIOJA_CV_" + pwd + ".pdf";
         document.querySelectorAll('[data-role="download-cv"]').forEach(function (a) {
           a.setAttribute("data-unlocked", "true");
+          a.href = fileUrl;
+          a.download = "REUBEN_NYABERI_SIOJA CURRICULUM VITAE.pdf";
           a.removeAttribute("disabled");
         });
         if (pwForm) pwForm.hidden = true;
         if (pwUnlocked) pwUnlocked.hidden = false;
         if (pwInput) pwInput.classList.remove("error");
-        try { sessionStorage.setItem("cv_unlocked", "1"); } catch (e) {}
+        try { sessionStorage.setItem("cv_unlocked_pwd", pwd); } catch (e) {}
       }
 
       function tryUnlock() {
-        if (pwInput.value.trim().toLowerCase() === CV_PASSWORD) {
-          unlockCV();
-        } else {
-          pwInput.classList.add("error");
-          pwInput.value = "";
-          pwInput.placeholder = "Incorrect — try again";
-          pwInput.focus();
-        }
+        var pwd = pwInput.value.trim().toLowerCase();
+        var fileUrl = "REUBEN_NYABERI_SIOJA_CV_" + pwd + ".pdf";
+        
+        fetch(fileUrl, { method: 'HEAD' })
+          .then(function(response) {
+            if (response.ok) {
+              unlockCV(pwd);
+            } else {
+              throw new Error("Incorrect access code");
+            }
+          })
+          .catch(function() {
+            pwInput.classList.add("error");
+            pwInput.value = "";
+            pwInput.placeholder = "Incorrect — try again";
+            pwInput.focus();
+          });
       }
 
       if (pwUnlock) pwUnlock.addEventListener("click", tryUnlock);
@@ -2702,10 +2710,10 @@
         pwInput.addEventListener("keydown", function (e) {
           if (e.key === "Enter") tryUnlock();
         });
-        if (pwHint) pwHint.textContent = CV_HINT;
-        var wasUnlocked = false;
-        try { wasUnlocked = sessionStorage.getItem("cv_unlocked") === "1"; } catch (e) {}
-        if (wasUnlocked) unlockCV();
+        if (pwHint) pwHint.textContent = "Please request access from Reuben";
+        var savedPwd = "";
+        try { savedPwd = sessionStorage.getItem("cv_unlocked_pwd"); } catch (e) {}
+        if (savedPwd) unlockCV(savedPwd);
       }
     </script>
   </body>
