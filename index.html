@@ -1560,7 +1560,7 @@
           <li><a href="#disciplines" data-scroll>Disciplines</a></li>
           <li><a href="#work" data-scroll>Work</a></li>
           <li><a href="#experience" data-scroll>Experience</a></li>
-          <li><a href="https://checkme-solutions.vercel.app/publications" target="_blank" rel="noopener">Publications</a></li>
+          <li><a href="#publications" data-scroll>Publications</a></li>
           <li><a href="#testimonials" data-scroll>Testimonials</a></li>
           <li><a href="#contact" data-scroll>Contact</a></li>
         </ul>
@@ -1791,81 +1791,95 @@
     <!-- WORK / PROJECTS -->
     <section class="section" id="work">
       <div class="container">
-        <p class="eyebrow reveal">Selected Work</p>
-        <h2 class="section-title reveal">Products built, shipped and maintained.</h2>
-        <div class="work-head reveal">
-          <p class="section-desc" style="margin-top: 0">
-            Production systems across web apps, data, retail and education, live and in use.
-          </p>
-          <div class="filters" id="filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="web">Web Apps</button>
-            <button class="filter-btn" data-filter="data">Data</button>
-            <button class="filter-btn" data-filter="retail">Retail &amp; POS</button>
-            <button class="filter-btn" data-filter="education">Education</button>
+        <div class="about-grid">
+          <div class="about-side reveal">
+            <p class="eyebrow">Selected Work</p>
+            <h2 class="section-title">Projects &amp; Deployments.</h2>
           </div>
-        </div>
-        <div id="projectList" style="margin-top: 1.5rem">
-          <button class="project-row reveal show" data-project="church" data-cat="web">
-            <span class="p-num">01</span>
-            <span class="p-name">Christ Embassy Website &amp; Admin Portal</span>
-            <span class="p-cat">Web App</span>
-            <span class="p-view">View case study →</span>
-          </button>
-          <button class="project-row reveal show" data-project="npc" data-cat="education">
-            <span class="p-num">02</span>
-            <span class="p-name">North Coast Prime College, Student Portal</span>
-            <span class="p-cat">Education</span>
-            <span class="p-view">View case study →</span>
-          </button>
-          <button class="project-row reveal show" data-project="checkmerent" data-cat="web">
-            <span class="p-num">03</span>
-            <span class="p-name">CheckMeRent, Rental Management</span>
-            <span class="p-cat">Web App</span>
-            <span class="p-view">View case study →</span>
-          </button>
-          <button class="project-row reveal show" data-project="sacco" data-cat="data">
-            <span class="p-num">04</span>
-            <span class="p-name">SACCO &amp; Microfinance System</span>
-            <span class="p-cat">Data &amp; Finance</span>
-            <span class="p-view">View case study →</span>
-          </button>
-          <button class="project-row reveal show" data-project="rental" data-cat="web">
-            <span class="p-num">05</span>
-            <span class="p-name">Rental Management System</span>
-            <span class="p-cat">Web App</span>
-            <span class="p-view">View case study →</span>
-          </button>
-          <button class="project-row reveal show" data-project="pharmacy" data-cat="retail">
-            <span class="p-num">06</span>
-            <span class="p-name">CheckME Pharmacy POS</span>
-            <span class="p-cat">Retail &amp; POS</span>
-            <span class="p-view">View case study →</span>
-          </button>
-          <button class="project-row reveal show" data-project="analytics" data-cat="data">
-            <span class="p-num">07</span>
-            <span class="p-name">Data Analytics &amp; Reporting</span>
-            <span class="p-cat">Data</span>
-            <span class="p-view">View case study →</span>
-          </button>
-          <button class="project-row reveal show" data-project="hospitality" data-cat="retail">
-            <span class="p-num">08</span>
-            <span class="p-name">Hospitality Systems Support</span>
-            <span class="p-cat">Hospitality</span>
-            <span class="p-view">View case study →</span>
-          </button>
-          <button class="project-row reveal show" data-project="edusys" data-cat="education">
-            <span class="p-num">09</span>
-            <span class="p-name">CheckME EduSys, College ERP</span>
-            <span class="p-cat">Education</span>
-            <span class="p-view">View case study →</span>
-          </button>
-          <button class="project-row reveal show" data-project="checkme" data-cat="web">
-            <span class="p-num">10</span>
-            <span class="p-name">CheckME Solutions, Brand Suite</span>
-            <span class="p-cat">Web App</span>
-            <span class="p-view">View case study →</span>
-          </button>
+          <div class="about-main reveal">
+            <div>
+              <div class="list-row">
+                <div class="list-head">
+                  <h3>Christ Embassy Sanctuary – Church Website &amp; Admin Portal</h3>
+                  <span class="list-period">Deployed 2024</span>
+                </div>
+                <p class="list-org">
+                  <a href="https://christ-embassy-sanctuary.vercel.app/" target="_blank" rel="noopener" style="color:var(--primary); text-decoration:none;">Live</a> | 
+                  <a href="https://christ-embassy-sanctuary.vercel.app/admin" target="_blank" rel="noopener" style="color:var(--primary); text-decoration:none;">Admin</a>
+                </p>
+                <ul class="list-points">
+                  <li>Designed and developed a full multi-page church website featuring sections for Home, About, Ministries, Centres, Events, and Contact, deployed live on Vercel.</li>
+                  <li>Built and integrated a dedicated Admin Portal enabling church administrators to manage content, events, and member information through a secure backend interface.</li>
+                  <li>Implemented responsive design ensuring seamless functionality across desktop, tablet, and mobile devices.</li>
+                  <li><strong>Technologies:</strong> HTML5, CSS3, JavaScript, hosted and deployed via Vercel with continuous deployment pipeline.</li>
+                </ul>
+              </div>
+              <div class="list-row">
+                <div class="list-head">
+                  <h3>North Coast Prime College (NPC) – Student Portal &amp; Admin System</h3>
+                  <span class="list-period">Deployed 2025</span>
+                </div>
+                <p class="list-org">
+                  <a href="https://npc-ke.web.app" target="_blank" rel="noopener" style="color:var(--primary); text-decoration:none;">Live</a> | 
+                  <a href="https://npc-ke.web.app/study" target="_blank" rel="noopener" style="color:var(--primary); text-decoration:none;">Student Portal</a> | 
+                  <a href="https://npc-ke.web.app/create" target="_blank" rel="noopener" style="color:var(--primary); text-decoration:none;">Admin</a>
+                </p>
+                <ul class="list-points">
+                  <li>Developed a full-stack academic management platform for North Coast Prime College, a professional training institution in Mombasa, Kenya.</li>
+                  <li>Built a Student Portal enabling learners to securely log in, track course progress, view exam results, manage fee statements, handle assignments, and download transcripts.</li>
+                  <li>Developed an Admin Portal for staff to create and manage student records, course enrolments, exam data, and institutional content.</li>
+                  <li>Integrated secure user authentication, password reset functionality, and role-based access control (student vs. admin).</li>
+                  <li><strong>Technologies:</strong> HTML5, CSS3, JavaScript, Firebase (Firestore, Authentication, Hosting) , deployed on Firebase with real-time database capabilities.</li>
+                </ul>
+              </div>
+              <div class="list-row">
+                <div class="list-head">
+                  <h3>CheckME Solutions Website</h3>
+                  <span class="list-period">Deployed 2026</span>
+                </div>
+                <p class="list-org">
+                  <a href="https://checkme-solutions.vercel.app/" target="_blank" rel="noopener" style="color:var(--primary); text-decoration:none;">Live</a> | 
+                  Solo Developer
+                </p>
+                <ul class="list-points">
+                  <li>Designed and deployed a production-ready responsive business website from scratch using HTML5, CSS, and vanilla JavaScript</li>
+                  <li>Built 12 interactive service cards with category filtering and expandable detail modals</li>
+                  <li>Implemented animated hero section, portfolio showcase, and testimonials carousel under a custom dark/cyan brand identity</li>
+                  <li>Integrated a contact form and deployed to Vercel with zero-config CI/CD</li>
+                  <li>Generated client inquiries across web development, IT consultancy, and digital marketing services</li>
+                </ul>
+              </div>
+              <div class="list-row">
+                <div class="list-head">
+                  <h3>Savoury Spoon Restaurant Website</h3>
+                  <span class="list-period">Deployed 2024</span>
+                </div>
+                <p class="list-org">
+                  <a href="https://deploy-omega-opal.vercel.app/" target="_blank" rel="noopener" style="color:var(--primary); text-decoration:none;">Live</a> | 
+                  Solo Developer
+                </p>
+                <ul class="list-points">
+                  <li>Built a fully responsive fast food restaurant website for a Mtwapa-based client featuring an online menu, food categories, and order call-to-action</li>
+                  <li>Developed with semantic HTML5, custom CSS animations, and vanilla JavaScript, no framework dependencies</li>
+                  <li>Designed for mobile-first performance targeting local customers browsing on phone</li>
+                  <li>Deployed to Vercel with instant global delivery</li>
+                </ul>
+              </div>
+              <div class="list-row">
+                <div class="list-head">
+                  <h3>Point-Of-Sale Systems</h3>
+                  <span class="list-period">CheckME Solutions</span>
+                </div>
+                <ul class="list-points">
+                  <li><strong>Pharmacy Management System:</strong> Drug inventory, dispensing, expiry tracking, supplier management, and financial reporting. <a href="https://checkme-phamarcy.web.app/" target="_blank" rel="noopener" style="color:var(--primary); text-decoration:none;">Link</a></li>
+                  <li><strong>School Management System:</strong> Student registration, attendance, exams, fee management, HR, library, and parent portal. <a href="https://checkmeschoolms-client.onrender.com" target="_blank" rel="noopener" style="color:var(--primary); text-decoration:none;">Link</a></li>
+                  <li><strong>Hotel Management System:</strong> Room reservations, check-in/out, housekeeping, billing, and occupancy reporting. (Live demo available on request)</li>
+                  <li><strong>SACCO &amp; Microfinance System:</strong> Member registration, loan management, share contributions, repayment scheduling, and financial statements. (Live demo available on request)</li>
+                  <li><strong>Rental Management System:</strong> Tenant onboarding, rent invoicing, M-Pesa payment tracking, maintenance requests, and landlord dashboards. (Live demo available on request)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -2409,7 +2423,7 @@
       });
 
       // ------- Active nav + scroll spy -------
-      var sections = ["about", "disciplines", "work", "experience", "testimonials", "contact"];
+      var sections = ["about", "disciplines", "work", "experience", "publications", "testimonials", "contact"];
       var navAnchors = {};
       document.querySelectorAll("#navLinks a[data-scroll]").forEach(function (a) {
         var id = a.getAttribute("href").replace("#", "");
