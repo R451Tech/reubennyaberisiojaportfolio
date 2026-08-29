@@ -2782,6 +2782,19 @@
       var pwForm = document.getElementById("secureForm");
       var pwUnlocked = document.getElementById("secureUnlocked");
 
+      var cvLockTimer = null;
+      function lockCV() {
+        document.querySelectorAll('[data-role="download-cv"]').forEach(function (a) {
+          a.setAttribute("data-unlocked", "false");
+          a.href = "#secureAccess";
+          a.removeAttribute("download");
+        });
+        if (pwForm) pwForm.hidden = false;
+        if (pwUnlocked) pwUnlocked.hidden = true;
+        if (pwInput) pwInput.value = "";
+        try { sessionStorage.removeItem("cv_unlocked_pwd"); } catch (e) {}
+      }
+
       function unlockCV(pwd) {
         var fileUrl = "REUBEN_NYABERI_SIOJA_CV_" + pwd + ".pdf";
         document.querySelectorAll('[data-role="download-cv"]').forEach(function (a) {
@@ -2794,6 +2807,9 @@
         if (pwUnlocked) pwUnlocked.hidden = false;
         if (pwInput) pwInput.classList.remove("error");
         try { sessionStorage.setItem("cv_unlocked_pwd", pwd); } catch (e) {}
+
+        if (cvLockTimer) clearTimeout(cvLockTimer);
+        cvLockTimer = setTimeout(lockCV, 60000); // lock after 1 minute
       }
 
       function tryUnlock() {
