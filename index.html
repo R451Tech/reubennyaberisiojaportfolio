@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Reuben Nyaberi — ICT, Software &amp; Data Professional</title>
+    <title>Reuben Nyaberi, ICT, Software &amp; Data Professional</title>
     <meta
       name="description"
-      content="Reuben Nyaberi Sioja is an ICT &amp; software professional in Mombasa, Kenya — building full-stack products, analysing data, and delivering IT support and enterprise systems across government, hospitality and education."
+      content="Reuben Nyaberi Sioja is an ICT &amp; software professional in Mombasa, Kenya, building full-stack products, analysing data, and delivering IT support and enterprise systems across government, hospitality and education."
     />
     <meta name="author" content="Reuben Nyaberi Sioja" />
     <link rel="canonical" href="https://r451tech.github.io/reubennyaberisiojaportfolio/" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Reuben Nyaberi — ICT, Software &amp; Data Professional" />
+    <meta property="og:title" content="Reuben Nyaberi, ICT, Software &amp; Data Professional" />
     <meta
       property="og:description"
       content="Building full-stack products, analysing data, and delivering IT support and enterprise systems across Kenya."
@@ -26,7 +26,7 @@
     />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Reuben Nyaberi — ICT, Software &amp; Data Professional" />
+    <meta name="twitter:title" content="Reuben Nyaberi, ICT, Software &amp; Data Professional" />
     <meta
       name="twitter:description"
       content="Building full-stack products, analysing data, and delivering IT support and enterprise systems across Kenya."
@@ -1469,6 +1469,84 @@
           transition: none;
         }
       }
+      /* ------- ACCESSIBILITY WIDGET ------- */
+      .a11y-widget {
+        position: fixed;
+        bottom: 1.5rem;
+        left: 1.5rem;
+        z-index: 9999;
+      }
+      .a11y-toggle {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background: var(--accent);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+      }
+      .a11y-toggle:hover {
+        transform: scale(1.1);
+        background: var(--accent-hover);
+      }
+      .a11y-menu {
+        position: absolute;
+        bottom: 56px;
+        left: 0;
+        width: 240px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+      }
+      .a11y-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid var(--border);
+        font-weight: 600;
+        font-family: var(--font-display);
+      }
+      .a11y-body {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+      }
+      .a11y-btn {
+        padding: 0.5rem;
+        text-align: left;
+        border-radius: 6px;
+        font-size: 0.9rem;
+      }
+      .a11y-btn:hover, .a11y-btn.active {
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--accent);
+      }
+      html.a11y-large-text {
+        font-size: 115%;
+      }
+      html.a11y-high-contrast {
+        --bg: #000 !important;
+        --surface: #000 !important;
+        --fg: #fff !important;
+        --border: #fff !important;
+        --muted: #ddd !important;
+        --accent: #ffeb3b !important;
+        --accent-hover: #ffc107 !important;
+      }
+      html.a11y-highlight-links a {
+        text-decoration: underline !important;
+        text-decoration-color: var(--accent) !important;
+        text-decoration-thickness: 2px !important;
+        background: rgba(255, 255, 0, 0.2);
+      }
     </style>
   </head>
 
@@ -1502,12 +1580,12 @@
       <div class="container">
         <p class="eyebrow">ICT · Software · Data</p>
         <h1>Reuben<br />Nyaberi</h1>
-        <p class="hero-role">ICT &amp; Software / Data Professional — 7+ years</p>
+        <p class="hero-role">ICT &amp; Software / Data Professional, 7+ years</p>
         <div class="availability"><span class="dot"></span>Available for freelance projects, data dashboards &amp; IT support</div>
         <div class="hero-grid-bottom">
           <p class="hero-lead">
             I build full-stack products, analyse data for real decisions and keep the systems
-            underneath running — across government, hospitality, education and manufacturing.
+            underneath running, across government, hospitality, education and manufacturing.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#contact">Start a project</a>
@@ -1517,7 +1595,6 @@
         </div>
         <div class="hero-meta">
           <span>Mombasa, Kenya</span>
-          <span>ReuTech Solutions</span>
           <span>CheckME Solutions</span>
           <span>Ministry of Education</span>
         </div>
@@ -1536,7 +1613,7 @@
                 alt="Portrait of Reuben Nyaberi"
               />
             </div>
-            <p class="about-cap">ICT · Software · Data — based on the Kenyan coast</p>
+            <p class="about-cap">ICT · Software · Data, based on the Kenyan coast</p>
           </div>
           <div class="about-main reveal">
             <h2>
@@ -1545,20 +1622,18 @@
             </h2>
             <p>
               I'm Reuben Nyaberi (Sioja), a developer and operations professional based in Mombasa,
-              Kenya, along the Kilifi coast. I run <strong>ReuTech Solutions</strong> and
-              <strong>CheckME Solutions</strong> — building production software for the Kenyan
-              market: rental management, retail, school and college systems — while also working on
+              Kenya, along the Kilifi coast. I run <strong>CheckME Solutions</strong>, building production software for the Kenyan
+              market: rental management, retail, school and college systems, while also working on
               data analysis, database management and enterprise systems administration.
             </p>
             <p>
               Alongside building products, I'm an ICT Officer with Kenya's Ministry of Education and
               have hands-on experience in hospitality systems (Opera, Fidelio, Cloudbeds), POS
-              platforms, and remote technical support. I don't treat these as separate lanes — a
+              platforms, and remote technical support. I don't treat these as separate lanes, a
               good product needs the software built right, the data read correctly, and the
               infrastructure underneath kept reliable. That's the work I do.
             </p>
             <div>
-              <span class="about-brand">ReuTech Solutions</span>
               <span class="about-brand">CheckME Solutions</span>
               <span class="about-brand">Ministry of Education</span>
             </div>
@@ -1596,7 +1671,7 @@
             <div class="d-body">
               <div class="d-inner">
                 <p class="d-summary">
-                  Full-stack products built to run in production — from student portals to rental,
+                  Full-stack products built to run in production, from student portals to rental,
                   retail and management systems.
                 </p>
                 <ul class="d-list">
@@ -1637,7 +1712,7 @@
             <div class="d-body">
               <div class="d-inner">
                 <p class="d-summary">
-                  Keeping the systems underneath the software reliable — remote and on-site.
+                  Keeping the systems underneath the software reliable, remote and on-site.
                 </p>
                 <ul class="d-list">
                   <li>Hardware &amp; software troubleshooting</li>
@@ -1719,7 +1794,7 @@
         <h2 class="section-title reveal">Products built, shipped and maintained.</h2>
         <div class="work-head reveal">
           <p class="section-desc" style="margin-top: 0">
-            Production systems across web apps, data, retail and education — live and in use.
+            Production systems across web apps, data, retail and education, live and in use.
           </p>
           <div class="filters" id="filters">
             <button class="filter-btn active" data-filter="all">All</button>
@@ -1738,13 +1813,13 @@
           </button>
           <button class="project-row reveal show" data-project="npc" data-cat="education">
             <span class="p-num">02</span>
-            <span class="p-name">North Coast Prime College — Student Portal</span>
+            <span class="p-name">North Coast Prime College, Student Portal</span>
             <span class="p-cat">Education</span>
             <span class="p-view">View case study →</span>
           </button>
           <button class="project-row reveal show" data-project="checkmerent" data-cat="web">
             <span class="p-num">03</span>
-            <span class="p-name">CheckMeRent — Rental Management</span>
+            <span class="p-name">CheckMeRent, Rental Management</span>
             <span class="p-cat">Web App</span>
             <span class="p-view">View case study →</span>
           </button>
@@ -1780,13 +1855,13 @@
           </button>
           <button class="project-row reveal show" data-project="edusys" data-cat="education">
             <span class="p-num">09</span>
-            <span class="p-name">CheckME EduSys — College ERP</span>
+            <span class="p-name">CheckME EduSys, College ERP</span>
             <span class="p-cat">Education</span>
             <span class="p-view">View case study →</span>
           </button>
           <button class="project-row reveal show" data-project="checkme" data-cat="web">
             <span class="p-num">10</span>
-            <span class="p-name">CheckME Solutions — Brand Suite</span>
+            <span class="p-name">CheckME Solutions, Brand Suite</span>
             <span class="p-cat">Web App</span>
             <span class="p-view">View case study →</span>
           </button>
@@ -1896,7 +1971,7 @@
                   <h3>ICT Officer (Internship)</h3>
                   <span class="list-period">2026</span>
                 </div>
-                <p class="list-org">Ministry of Education, Republic of Kenya — Kilifi County</p>
+                <p class="list-org">Ministry of Education, Republic of Kenya, Kilifi County</p>
                 <ul class="list-points">
                   <li>Handled walk-in clients and resolved complaints across KNEC, Ministry and customer enquiries</li>
                   <li>Executed scheduled preventive ICT maintenance, reducing unplanned downtime</li>
@@ -1910,7 +1985,7 @@
                   <h3>Operations Supervisor</h3>
                   <span class="list-period">2023 – 2025</span>
                 </div>
-                <p class="list-org">Lambada Holiday Resort — Mombasa</p>
+                <p class="list-org">Lambada Holiday Resort, Mombasa</p>
                 <ul class="list-points">
                   <li>Supervised daily operations across front desk, housekeeping, F&amp;B and maintenance</li>
                   <li>Allocated shifts and duty rosters for 15+ staff</li>
@@ -1923,7 +1998,7 @@
                   <h3>Quality Assurance &amp; ICT Analyst</h3>
                   <span class="list-period">Jun 2023 – Dec 2023</span>
                 </div>
-                <p class="list-org">Mzuri Sweets Ltd — Mombasa</p>
+                <p class="list-org">Mzuri Sweets Ltd, Mombasa</p>
                 <ul class="list-points">
                   <li>Automated digital QA reporting, reducing report generation time by ~60%</li>
                   <li>Integrated QA tracking modules with the company's ERP system</li>
@@ -1936,7 +2011,7 @@
                   <h3>ICT Specialist &amp; Social Media Manager</h3>
                   <span class="list-period">2022 – 2024</span>
                 </div>
-                <p class="list-org">Christ Embassy Sanctuary — Mombasa</p>
+                <p class="list-org">Christ Embassy Sanctuary, Mombasa</p>
                 <ul class="list-points">
                   <li>Provided end-to-end ICT support including AV, computers and internet infrastructure</li>
                   <li>Managed social media and produced digital content, growing community engagement</li>
@@ -1949,7 +2024,7 @@
                   <h3>ICT Remote Support Assistant</h3>
                   <span class="list-period">2022 – 2024</span>
                 </div>
-                <p class="list-org">Nesbony College — Mombasa</p>
+                <p class="list-org">Nesbony College, Mombasa</p>
                 <ul class="list-points">
                   <li>Provided remote technical support for front desk and administrative systems</li>
                   <li>Reduced system downtime through proactive monitoring and rapid fault resolution</li>
@@ -1962,9 +2037,9 @@
                   <h3>Founder &amp; Developer</h3>
                   <span class="list-period">Current</span>
                 </div>
-                <p class="list-org">ReuTech Solutions · CheckME Solutions</p>
+                <p class="list-org">CheckME Solutions</p>
                 <ul class="list-points">
-                  <li>Building production SaaS for the Kenyan market — rental, retail, school and college systems</li>
+                  <li>Building production SaaS for the Kenyan market, rental, retail, school and college systems</li>
                   <li>Independent full-stack development and technical consulting</li>
                 </ul>
                 <p class="list-loc">Mombasa, Kenya</p>
@@ -1983,7 +2058,7 @@
         <div class="testi-grid">
           <div class="testi-card reveal">
             <p class="testi-quote">
-              “Reuben rebuilt our student portal and handled the whole rollout — teachers picked
+              “Reuben rebuilt our student portal and handled the whole rollout, teachers picked
               it up immediately and it's been running smoothly since day one.”
             </p>
             <div class="testi-meta">
@@ -2003,7 +2078,7 @@
           </div>
           <div class="testi-card reveal">
             <p class="testi-quote">
-              “Reliable technical support — when a system went down he sorted it fast and then
+              “Reliable technical support, when a system went down he sorted it fast and then
               trained our staff so it wouldn't happen again.”
             </p>
             <div class="testi-meta">
@@ -2013,7 +2088,7 @@
           </div>
         </div>
         <p class="testi-note reveal">
-          Placeholder quotes — replace with real client references or short quotes when you have
+          Placeholder quotes, replace with real client references or short quotes when you have
           permission.
         </p>
       </div>
@@ -2033,7 +2108,7 @@
               <span class="hc-num">01</span>
               <h3>Web &amp; Software Development</h3>
               <p class="hc-desc">A business needs an online presence or an internal tool that actually works.</p>
-              <p class="hc-foot">Fast, production-ready websites and apps — portals, management systems, POS and dashboards.</p>
+              <p class="hc-foot">Fast, production-ready websites and apps, portals, management systems, POS and dashboards.</p>
               <a class="hc-link" href="#contact">Start a project →</a>
             </div>
           </div>
@@ -2109,7 +2184,7 @@
             <p class="eyebrow">Contact</p>
             <h2>Have a problem worth solving?</h2>
             <p>
-              Let's build something useful — a product, a dashboard, an automation, or get your
+              Let's build something useful, a product, a dashboard, an automation, or get your
               systems running smoothly.
             </p>
             <div class="c-links">
@@ -2148,7 +2223,7 @@
             <button class="btn btn-primary" type="submit">Send inquiry →</button>
             <p class="form-note">
               Sends straight to my inbox. If the email form isn't configured yet it falls back to
-              WhatsApp — either way you'll reach me at
+              WhatsApp, either way you'll reach me at
               <a href="mailto:reubennyaberi96@gmail.com">reubennyaberi96@gmail.com</a> or
               <a href="https://wa.me/254710164190" target="_blank" rel="noopener">+254 710 164190</a>.
             </p>
@@ -2189,11 +2264,33 @@
       </div>
     </section>
 
+    <!-- ACCESSIBILITY WIDGET -->
+    <div id="a11y-widget" class="a11y-widget">
+      <button id="a11y-toggle" class="a11y-toggle" aria-label="Accessibility Tools" title="Accessibility Tools">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="12"></line>
+          <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </svg>
+      </button>
+      <div id="a11y-menu" class="a11y-menu" hidden>
+        <div class="a11y-header">
+          <span>Accessibility</span>
+          <button id="a11y-close" aria-label="Close" style="font-size:1.5rem">&times;</button>
+        </div>
+        <div class="a11y-body">
+          <button class="a11y-btn" id="a11y-text">Increase Text Size</button>
+          <button class="a11y-btn" id="a11y-contrast">High Contrast</button>
+          <button class="a11y-btn" id="a11y-links">Highlight Links</button>
+        </div>
+      </div>
+    </div>
+
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container footer-inner">
         <span>© <span id="year"></span> Reuben Nyaberi Sioja</span>
-        <span>ReuTech Solutions · CheckME Solutions</span>
+        <span>CheckME Solutions</span>
         <a href="#top">Back to top ↑</a>
       </div>
     </footer>
@@ -2358,7 +2455,7 @@
             "Used Firebase for real-time database and hosting",
           ],
           solution:
-            "One platform connecting the full student lifecycle — secure logins, academic tracking and admin management — deployed on Firebase.",
+            "One platform connecting the full student lifecycle, secure logins, academic tracking and admin management, deployed on Firebase.",
           stack: ["JavaScript", "Firebase", "Firestore", "Authentication", "Hosting"],
           results: [
             "Live at npc-ke.web.app",
@@ -2374,7 +2471,7 @@
           link: "https://checkmerent.onrender.com",
           img: "./proj-rental.jpg",
           overview:
-            "A rental and property management platform built for landlords and property managers — part of the CheckME Solutions product suite.",
+            "A rental and property management platform built for landlords and property managers, part of the CheckME Solutions product suite.",
           problem:
             "Several modules were reading and writing data independently, so updates in one area didn't reliably reflect in another, and key pages were still stub routes.",
           approach: [
@@ -2452,9 +2549,9 @@
           link: "https://checkme-pharmacy.web.app",
           img: "./proj-pharmacy.jpg",
           overview:
-            "A pharmacy point-of-sale system built around Kenyan tax and payments compliance — from KRA ETIMS to M-Pesa.",
+            "A pharmacy point-of-sale system built around Kenyan tax and payments compliance, from KRA ETIMS to M-Pesa.",
           problem:
-            "Pharmacies need every sale fast at the counter, compliant with KRA e-invoicing, and reconcilable at shift close — three requirements that usually pull a POS in different directions.",
+            "Pharmacies need every sale fast at the counter, compliant with KRA e-invoicing, and reconcilable at shift close, three requirements that usually pull a POS in different directions.",
           approach: [
             "Built a receipt engine with sequential invoice numbers and a dual-purpose KRA QR code",
             "Supported A4 PDF and 58/80mm thermal receipt formats from the same data",
@@ -2478,9 +2575,9 @@
           link: null,
           img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80",
           overview:
-            "Applied data analysis across business and public-sector contexts — from financial reconciliation to enrollment reporting and production QA.",
+            "Applied data analysis across business and public-sector contexts, from financial reconciliation to enrollment reporting and production QA.",
           problem:
-            "Raw data existed but wasn't structured for review — cashbooks needed reconciling and operational figures needed to be turned into readable analysis.",
+            "Raw data existed but wasn't structured for review, cashbooks needed reconciling and operational figures needed to be turned into readable analysis.",
           approach: [
             "Cleaned and reconciled financial records into audit-ready entries",
             "Structured operational and enrollment data for review",
@@ -2525,7 +2622,7 @@
           overview:
             "A college management ERP spanning Admin, Finance, Lecturer, Student and Library modules around a central Student Information System.",
           problem:
-            "Colleges need one system handling admissions, staff operations and academic records without pieces drifting out of sync — with role-based access strict enough for a real institution.",
+            "Colleges need one system handling admissions, staff operations and academic records without pieces drifting out of sync, with role-based access strict enough for a real institution.",
           approach: [
             "Modelled a 23-role RBAC and permissions system with a full audit trail",
             "Designed a central SIS hub every module reads from and writes to",
@@ -2549,7 +2646,7 @@
           link: "https://checkme-solutions.vercel.app",
           img: "./proj-coastlab.jpg",
           overview:
-            "The umbrella brand for a suite of production SaaS products — rental, retail/POS, education and more — built primarily for the Kenyan market.",
+            "The umbrella brand for a suite of production SaaS products, rental, retail/POS, education and more, built primarily for the Kenyan market.",
           problem:
             "Off-the-shelf software either doesn't fit local payment and reporting realities (M-Pesa, KRA) or costs more than a small operator can sustain.",
           approach: [
@@ -2634,7 +2731,7 @@
         if (e.key === "Escape") closeModal();
       });
 
-      // Contact form — real email delivery via Formspree (free, no backend)
+      // Contact form, real email delivery via Formspree (free, no backend)
       // Replace the form ID below with your own: https://formspree.io (create a form, copy its ID)
       var FORMSPREE_FORM_ID = "mkjngwlo"; // e.g. "xkgewkan"
 
@@ -2650,7 +2747,7 @@
         btn.innerHTML = "Sending…";
 
         if (FORMSPREE_FORM_ID === "YOUR_FORM_ID") {
-          // No Formspree ID configured yet — fall back to WhatsApp so it still works.
+          // No Formspree ID configured yet, fall back to WhatsApp so it still works.
           btn.disabled = false;
           btn.innerHTML = original;
           var fallback = encodeURIComponent("Project inquiry from " + name + " (" + email + ")\n\n" + msg);
@@ -2665,14 +2762,14 @@
         })
           .then(function (response) {
             if (response.ok) {
-              btn.innerHTML = "✓ Sent — thank you!";
+              btn.innerHTML = "✓ Sent, thank you!";
               contactForm.reset();
             } else {
               throw new Error("Request failed");
             }
           })
           .catch(function () {
-            btn.innerHTML = "✕ Failed — try again";
+            btn.innerHTML = "✕ Failed, try again";
             btn.disabled = false;
             setTimeout(function () { btn.innerHTML = original; }, 3000);
           });
@@ -2714,7 +2811,7 @@
           .catch(function() {
             pwInput.classList.add("error");
             pwInput.value = "";
-            pwInput.placeholder = "Incorrect — try again";
+            pwInput.placeholder = "Incorrect, try again";
             pwInput.focus();
           });
       }
@@ -2728,6 +2825,32 @@
         var savedPwd = "";
         try { savedPwd = sessionStorage.getItem("cv_unlocked_pwd"); } catch (e) {}
         if (savedPwd) unlockCV(savedPwd);
+      }
+      // Accessibility Widget
+      var a11yToggle = document.getElementById("a11y-toggle");
+      var a11yMenu = document.getElementById("a11y-menu");
+      var a11yClose = document.getElementById("a11y-close");
+      
+      if (a11yToggle && a11yMenu && a11yClose) {
+        a11yToggle.addEventListener("click", function() {
+          a11yMenu.hidden = !a11yMenu.hidden;
+        });
+        a11yClose.addEventListener("click", function() {
+          a11yMenu.hidden = true;
+        });
+        
+        document.getElementById("a11y-text").addEventListener("click", function(e) {
+          document.documentElement.classList.toggle("a11y-large-text");
+          e.target.classList.toggle("active");
+        });
+        document.getElementById("a11y-contrast").addEventListener("click", function(e) {
+          document.documentElement.classList.toggle("a11y-high-contrast");
+          e.target.classList.toggle("active");
+        });
+        document.getElementById("a11y-links").addEventListener("click", function(e) {
+          document.documentElement.classList.toggle("a11y-highlight-links");
+          e.target.classList.toggle("active");
+        });
       }
     </script>
   </body>
