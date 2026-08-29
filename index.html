@@ -1,0 +1,2712 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Reuben Nyaberi — ICT, Software &amp; Data Professional</title>
+    <meta
+      name="description"
+      content="Reuben Nyaberi Sioja is an ICT &amp; software professional in Mombasa, Kenya — building full-stack products, analysing data, and delivering IT support and enterprise systems across government, hospitality and education."
+    />
+    <meta name="author" content="Reuben Nyaberi Sioja" />
+    <link rel="canonical" href="https://reubennyaberi.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Reuben Nyaberi — ICT, Software &amp; Data Professional" />
+    <meta
+      property="og:description"
+      content="Building full-stack products, analysing data, and delivering IT support and enterprise systems across Kenya."
+    />
+    <meta property="og:url" content="https://reubennyaberi.com/" />
+    <meta property="og:site_name" content="Reuben Nyaberi" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?auto=format&fit=crop&w=1200&q=80"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Reuben Nyaberi — ICT, Software &amp; Data Professional" />
+    <meta
+      name="twitter:description"
+      content="Building full-stack products, analysing data, and delivering IT support and enterprise systems across Kenya."
+    />
+    <meta name="twitter:creator" content="@reubennyaberi" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Reuben Nyaberi Sioja",
+        "alternateName": "reubennyaberi",
+        "url": "https://reubennyaberi.com/",
+        "jobTitle": "ICT & Software / Data Professional",
+        "email": "mailto:reubennyaberi96@gmail.com",
+        "worksFor": { "@type": "Organization", "name": "CheckME Solutions" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Mombasa", "addressCountry": "KE" },
+        "knowsAbout": [
+          "Software Development",
+          "Data Analysis",
+          "IT Support",
+          "Database Management",
+          "Hotel Management Systems",
+          "Cloud Technology"
+        ]
+      }
+    </script>
+
+    <style>
+      :root {
+        --bg: #0b0b0d;
+        --surface: #141416;
+        --fg: #f3f1ec;
+        --muted: #8b8a86;
+        --border: #232326;
+        --accent: #3d5afe;
+        --accent-hover: #6079ff;
+        --font-body: "Manrope", sans-serif;
+        --font-display: "Space Grotesk", sans-serif;
+        --font-mono: "IBM Plex Mono", monospace;
+        --content: 1360px;
+        color-scheme: dark;
+      }
+      html[data-theme="light"] {
+        --bg: #f7f6f3;
+        --surface: #ffffff;
+        --fg: #17171a;
+        --muted: #5f5e5a;
+        --border: #e2e1dc;
+        --accent: #3d5afe;
+        --accent-hover: #2f49d6;
+        color-scheme: light;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 0 solid var(--border);
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--fg);
+        font-family: var(--font-body);
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+        transition: background 0.4s, color 0.4s;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        vertical-align: middle;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      button {
+        font-family: inherit;
+        background: none;
+        color: inherit;
+        cursor: pointer;
+      }
+
+      .container {
+        width: 100%;
+        max-width: var(--content);
+        margin: 0 auto;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      .section {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+        border-top: 1px solid var(--border);
+        scroll-margin-top: 88px;
+      }
+
+      @media (max-width: 640px) {
+        .section {
+          padding-top: 5.5rem;
+          padding-bottom: 5.5rem;
+        }
+      }
+
+      .eyebrow {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.28em;
+        color: var(--accent);
+        margin-bottom: 1rem;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: var(--font-display);
+        font-weight: 500;
+        letter-spacing: -0.025em;
+        line-height: 1.05;
+        text-wrap: balance;
+      }
+
+      .section-title {
+        font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+        max-width: 28rem;
+      }
+
+      .section-desc {
+        margin-top: 1.25rem;
+        max-width: 36rem;
+        color: var(--muted);
+        font-size: 1.125rem;
+        line-height: 1.7;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      .accent {
+        color: var(--accent);
+      }
+
+      /* ------- Theme toggle button ------- */
+      .theme-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border: 1px solid var(--border);
+        border-radius: 9999px;
+        color: var(--fg);
+        font-size: 1rem;
+        transition: border-color 0.3s, color 0.3s;
+      }
+      .theme-toggle:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+
+      /* ------- Animation helpers ------- */
+      .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+          transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .reveal.in {
+        opacity: 1;
+        transform: none;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .reveal {
+          opacity: 1;
+          transform: none;
+          transition: none;
+        }
+        html {
+          scroll-behavior: auto;
+        }
+        * {
+          animation-duration: 0.001ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.001ms !important;
+        }
+      }
+
+      /* ------- NAV ------- */
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        backdrop-filter: blur(8px);
+        background: rgba(11, 11, 13, 0.8);
+        border-bottom: 1px solid var(--border);
+      }
+      html[data-theme="light"] .nav {
+        background: rgba(247, 246, 243, 0.85);
+      }
+      .nav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        height: 68px;
+      }
+      .brand {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 1.05rem;
+        letter-spacing: -0.01em;
+        white-space: nowrap;
+      }
+      .brand span {
+        color: var(--accent);
+      }
+      .nav-links {
+        display: flex;
+        gap: 1.75rem;
+        list-style: none;
+        align-items: center;
+      }
+      .nav-links a:not(.nav-cta) {
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: var(--muted);
+        transition: color 0.3s;
+        padding: 0.25rem 0;
+      }
+      .nav-links a:not(.nav-cta):hover {
+        color: var(--fg);
+      }
+      .nav-links a:not(.nav-cta).active {
+        color: var(--accent);
+      }
+      .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+      }
+      .nav-cta {
+        background: var(--accent);
+        color: #fff;
+        border-radius: 9999px;
+        padding: 0.55rem 1.3rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        transition: background 0.3s;
+      }
+      .nav-cta:hover {
+        background: var(--accent-hover);
+      }
+      .nav-burger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        padding: 6px;
+      }
+      .nav-burger span {
+        width: 22px;
+        height: 2px;
+        background: var(--fg);
+        transition: transform 0.3s, opacity 0.3s;
+      }
+      @media (max-width: 960px) {
+        .nav-links {
+          display: none;
+          position: absolute;
+          top: 68px;
+          left: 0;
+          right: 0;
+          flex-direction: column;
+          align-items: stretch;
+          gap: 0;
+          background: var(--surface);
+          border-bottom: 1px solid var(--border);
+          padding: 0.5rem 0;
+        }
+        html[data-theme="light"] .nav-links {
+          background: var(--surface);
+        }
+        .nav-links.open {
+          display: flex;
+        }
+        .nav-links li a:not(.nav-cta) {
+          display: block;
+          padding: 0.9rem 1.5rem;
+        }
+        .nav-links li a:not(.nav-cta):hover {
+          background: var(--bg);
+        }
+        .nav-cta {
+          display: none;
+        }
+        .nav-burger {
+          display: flex;
+        }
+      }
+
+      /* ------- HERO ------- */
+      .hero {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 9rem 0 5rem;
+        overflow: hidden;
+      }
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        z-index: -2;
+        background-image: url("https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?auto=format&fit=crop&w=1900&q=80");
+        background-size: cover;
+        background-position: center;
+        opacity: 0.22;
+      }
+      .hero-bg::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(11, 11, 13, 0.55) 0%, var(--bg) 92%);
+      }
+      .hero-grid {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        opacity: 0.5;
+        background-image: linear-gradient(var(--border) 1px, transparent 1px),
+          linear-gradient(90deg, var(--border) 1px, transparent 1px);
+        background-size: 80px 80px;
+        -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 70%);
+        mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 70%);
+      }
+
+      .hero .eyebrow {
+        animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+      }
+      .hero h1 {
+        font-size: clamp(3rem, 9vw, 6.5rem);
+        line-height: 0.98;
+        margin-bottom: 1.25rem;
+        animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+      }
+      .hero h1 .outline {
+        color: transparent;
+        -webkit-text-stroke: 1.5px var(--fg);
+      }
+      .hero-role {
+        font-family: var(--font-mono);
+        font-size: 0.95rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: var(--accent);
+        margin-bottom: 1.5rem;
+        animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.22s both;
+      }
+      .hero-grid-bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: end;
+        animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.34s both;
+      }
+      .hero-lead {
+        font-size: 1.15rem;
+        color: var(--muted);
+        line-height: 1.7;
+        max-width: 30rem;
+      }
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: flex-end;
+      }
+      .availability {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        border: 1px solid var(--border);
+        border-radius: 9999px;
+        padding: 0.45rem 1rem;
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--muted);
+        margin-bottom: 1.5rem;
+        animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+      }
+      .availability .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #22c55e;
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.5);
+        animation: ping 1.6s cubic-bezier(0, 0, 0.2, 1) infinite;
+      }
+      @keyframes ping {
+        75%,
+        100% {
+          box-shadow: 0 0 0 8px rgba(34, 197, 94, 0);
+        }
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.85rem 1.5rem;
+        border-radius: 9999px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        transition: all 0.3s;
+      }
+      .btn-primary {
+        background: var(--accent);
+        color: #fff;
+      }
+      .btn-primary:hover {
+        background: var(--accent-hover);
+      }
+      .btn-ghost {
+        border: 1px solid var(--border);
+        color: var(--fg);
+      }
+      .btn-ghost:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+
+      .hero-meta {
+        margin-top: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem 2.5rem;
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: var(--muted);
+        animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.44s both;
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(18px);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      @media (max-width: 720px) {
+        .hero-grid-bottom {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+        .hero-actions {
+          justify-content: flex-start;
+        }
+      }
+
+      /* ------- ABOUT ------- */
+      .about-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 2.5rem;
+      }
+      .about-side {
+        grid-column: span 4;
+      }
+      .about-main {
+        grid-column: span 8;
+      }
+      .about-portrait {
+        position: relative;
+        border-radius: 1rem;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        margin-top: 1rem;
+      }
+      .about-portrait img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 4 / 5;
+      }
+      .about-cap {
+        margin-top: 0.75rem;
+        font-family: var(--font-mono);
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: var(--muted);
+      }
+      .about-main h2 {
+        font-size: clamp(1.9rem, 3.5vw, 3rem);
+        max-width: 36rem;
+      }
+      .about-main p {
+        margin-top: 1.25rem;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.75;
+        max-width: 40rem;
+      }
+      .about-brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        border: 1px solid var(--border);
+        padding: 0.35rem 0.9rem;
+        border-radius: 9999px;
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--fg);
+        margin-right: 0.6rem;
+        margin-top: 1.5rem;
+      }
+      .about-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-top: 2.5rem;
+      }
+      .stat {
+        border: 1px solid var(--border);
+        border-radius: 1rem;
+        padding: 1.5rem;
+        background: var(--surface);
+      }
+      .stat b {
+        font-family: var(--font-display);
+        font-size: 2rem;
+        color: var(--accent);
+        display: block;
+      }
+      .stat span {
+        color: var(--muted);
+        font-size: 0.85rem;
+        margin-top: 0.25rem;
+        display: block;
+      }
+      @media (max-width: 900px) {
+        .about-side,
+        .about-main {
+          grid-column: span 12;
+        }
+        .about-stats {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* ------- DISCIPLINES ACCORDION ------- */
+      .discipline-row {
+        border-bottom: 1px solid var(--border);
+      }
+      .discipline-head {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1.75rem 0;
+        text-align: left;
+      }
+      .discipline-head:hover .d-title {
+        color: var(--accent);
+      }
+      .d-num {
+        font-family: var(--font-mono);
+        font-size: 0.8rem;
+        color: var(--muted);
+        width: 1.75rem;
+        flex-shrink: 0;
+      }
+      .d-title {
+        font-family: var(--font-display);
+        font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+        transition: color 0.3s;
+        flex: 1;
+      }
+      .d-icon {
+        margin-left: auto;
+        font-size: 1.5rem;
+        color: var(--muted);
+        transition: transform 0.4s;
+        flex-shrink: 0;
+      }
+      .discipline-row.open .d-icon {
+        transform: rotate(45deg);
+      }
+      .d-body {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .discipline-row.open .d-body {
+        max-height: 600px;
+      }
+      .d-inner {
+        padding: 0 0 1.5rem 3.25rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+      .d-summary {
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+      .d-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        font-family: var(--font-mono);
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+      .d-list li {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+      }
+      .d-list li::before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: var(--accent);
+        flex-shrink: 0;
+      }
+      @media (max-width: 640px) {
+        .d-inner {
+          grid-template-columns: 1fr;
+          padding-left: 2.25rem;
+        }
+      }
+
+      /* ------- PROJECTS ------- */
+      .work-head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-bottom: 1.5rem;
+      }
+      .filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+      }
+      .filter-btn {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--muted);
+        border: 1px solid var(--border);
+        border-radius: 9999px;
+        padding: 0.45rem 1.1rem;
+        transition: all 0.3s;
+      }
+      .filter-btn:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+      .filter-btn.active {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: #fff;
+      }
+      .project-row {
+        width: 100%;
+        text-align: left;
+        border-top: 1px solid var(--border);
+        padding: 1.6rem 0.5rem;
+        display: grid;
+        grid-template-columns: 1fr 5fr 4fr 2fr;
+        gap: 1.25rem;
+        align-items: center;
+        border-radius: 0.5rem;
+        transition: background 0.3s, opacity 0.3s, transform 0.3s;
+        display: none;
+      }
+      .project-row.show {
+        display: grid;
+      }
+      .project-row:hover {
+        background: rgba(128, 128, 130, 0.08);
+      }
+      .project-row:hover .p-name {
+        color: var(--accent);
+        transform: translateX(6px);
+      }
+      .p-num {
+        font-family: var(--font-mono);
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+      .p-name {
+        font-family: var(--font-display);
+        font-size: clamp(1.15rem, 2.5vw, 1.6rem);
+        transition: all 0.4s;
+      }
+      .p-cat {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+      .p-view {
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.5rem;
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--muted);
+      }
+      .project-row:hover .p-view {
+        color: var(--accent);
+      }
+      @media (max-width: 760px) {
+        .project-row,
+        .project-row.show {
+          grid-template-columns: 1fr 5fr 2fr;
+        }
+        .p-cat {
+          display: none;
+        }
+      }
+
+      /* ------- CASE STUDY / MODAL ------- */
+      .modal {
+        position: fixed;
+        inset: 0;
+        z-index: 200;
+        background: var(--bg);
+        overflow-y: auto;
+        display: none;
+      }
+      .modal.open {
+        display: block;
+      }
+      .modal-inner {
+        max-width: var(--content);
+        margin: 0 auto;
+        padding: 6rem 1.5rem 4rem;
+      }
+      .modal-close {
+        position: fixed;
+        top: 1.25rem;
+        right: 1.5rem;
+        z-index: 210;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--muted);
+        padding: 0.4rem 0.8rem;
+        border: 1px solid var(--border);
+        border-radius: 9999px;
+        background: var(--surface);
+      }
+      .modal-close:hover {
+        color: var(--accent);
+      }
+      .m-title {
+        font-size: clamp(2.4rem, 6vw, 4.5rem);
+        margin-bottom: 1rem;
+      }
+      .m-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem 2rem;
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--muted);
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--border);
+      }
+      .m-meta a {
+        color: var(--accent);
+      }
+      .m-meta a:hover {
+        color: var(--accent-hover);
+      }
+      .m-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 2rem;
+      }
+      .m-col-l {
+        grid-column: span 7;
+      }
+      .m-col-s {
+        grid-column: span 5;
+      }
+      .m-text {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: var(--fg);
+        max-width: 40rem;
+        margin-bottom: 1.5rem;
+      }
+      .m-text.muted {
+        color: var(--muted);
+      }
+      .m-labelled {
+        margin-top: 2rem;
+      }
+      .m-labelled h4 {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: var(--accent);
+        margin-bottom: 1rem;
+      }
+      .m-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+      }
+      .m-list li {
+        display: flex;
+        gap: 1rem;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+      .m-list li::before {
+        content: "→";
+        color: var(--accent);
+        font-family: var(--font-mono);
+        flex-shrink: 0;
+      }
+      .m-list.res li {
+        color: var(--fg);
+      }
+      .m-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 2rem;
+      }
+      .m-tag {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        padding: 0.35rem 0.9rem;
+        border-radius: 9999px;
+        border: 1px solid var(--border);
+        color: var(--muted);
+      }
+      .m-img {
+        border-radius: 1rem;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        margin-bottom: 1.5rem;
+      }
+      .m-img img {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 16 / 10;
+      }
+      body.modal-open {
+        overflow: hidden;
+      }
+      @media (max-width: 900px) {
+        .m-col-l,
+        .m-col-s {
+          grid-column: span 12;
+        }
+      }
+
+      /* ------- STACK ------- */
+      .stack-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1px;
+        background: var(--border);
+        border: 1px solid var(--border);
+        border-radius: 1rem;
+        overflow: hidden;
+      }
+      .stack-cell {
+        background: var(--bg);
+        padding: 1.75rem;
+      }
+      .stack-cell h3 {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: var(--accent);
+        margin-bottom: 1.25rem;
+        font-weight: 500;
+      }
+      .stack-cell ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+      .stack-cell li {
+        font-size: 0.9rem;
+      }
+      @media (max-width: 1000px) {
+        .stack-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 520px) {
+        .stack-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* ------- EXPERIENCE / LISTS ------- */
+      .list-row {
+        border-top: 1px solid var(--border);
+        padding: 1.5rem 0;
+      }
+      .list-row:first-of-type {
+        border-top: 0;
+      }
+      .list-head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 0.4rem;
+      }
+      .list-head h3 {
+        font-size: 1.3rem;
+      }
+      .list-period {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        color: var(--muted);
+        flex-shrink: 0;
+      }
+      .list-org {
+        color: var(--accent);
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+      }
+      .list-desc {
+        color: var(--muted);
+        font-size: 0.9rem;
+        max-width: 36rem;
+        line-height: 1.7;
+      }
+      .list-points {
+        list-style: none;
+        margin-top: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .list-points li {
+        display: flex;
+        gap: 0.6rem;
+        color: var(--muted);
+        font-size: 0.85rem;
+        line-height: 1.6;
+        max-width: 34rem;
+      }
+      .list-points li::before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: var(--accent);
+        flex-shrink: 0;
+        margin-top: 0.5em;
+      }
+      .list-loc {
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        color: var(--muted);
+        margin-top: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+
+      /* ------- HELP / SERVICES GRID ------- */
+      .help-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+      }
+      .help-card {
+        border: 1px solid var(--border);
+        border-radius: 1rem;
+        overflow: hidden;
+        background: var(--surface);
+        display: flex;
+        flex-direction: column;
+        transition: border-color 0.3s, transform 0.3s;
+      }
+      .help-card:hover {
+        border-color: var(--accent);
+        transform: translateY(-4px);
+      }
+      .help-card .hc-img {
+        overflow: hidden;
+        aspect-ratio: 16 / 10;
+        border-bottom: 1px solid var(--border);
+      }
+      .help-card .hc-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s;
+      }
+      .help-card:hover .hc-img img {
+        transform: scale(1.05);
+      }
+      .help-card .hc-body {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+      .hc-num {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        color: var(--muted);
+        margin-bottom: 0.9rem;
+      }
+      .help-card h3 {
+        font-size: 1.35rem;
+        margin-bottom: 0.7rem;
+      }
+      .hc-desc {
+        color: var(--muted);
+        font-size: 0.9rem;
+        line-height: 1.65;
+        margin-bottom: 0.75rem;
+      }
+      .hc-foot {
+        color: var(--muted);
+        font-size: 0.9rem;
+        line-height: 1.65;
+        margin-top: auto;
+      }
+      .hc-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        margin-top: 1.1rem;
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--accent);
+        transition: color 0.3s;
+      }
+      .hc-link:hover {
+        color: var(--accent-hover);
+      }
+      @media (max-width: 1000px) {
+        .help-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (max-width: 620px) {
+        .help-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* ------- TESTIMONIALS ------- */
+      .testi-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-top: 3rem;
+      }
+      .testi-card {
+        border: 1px solid var(--border);
+        border-radius: 1rem;
+        padding: 1.75rem;
+        background: var(--surface);
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        transition: border-color 0.3s, transform 0.3s;
+      }
+      .testi-card:hover {
+        border-color: var(--accent);
+        transform: translateY(-4px);
+      }
+      .testi-quote {
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: var(--fg);
+      }
+      .testi-meta {
+        margin-top: auto;
+        border-top: 1px solid var(--border);
+        padding-top: 1rem;
+      }
+      .testi-name {
+        display: block;
+        font-weight: 600;
+        color: var(--accent);
+      }
+      .testi-org {
+        display: block;
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--muted);
+        margin-top: 0.2rem;
+      }
+      .testi-note {
+        margin-top: 1.5rem;
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        color: var(--muted);
+      }
+      @media (max-width: 900px) {
+        .testi-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* ------- WORK IMAGE STRIP ------- */
+      .work-strip {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+        background: var(--border);
+        border: 1px solid var(--border);
+        border-radius: 1rem;
+        overflow: hidden;
+        margin-top: 3rem;
+      }
+      .work-strip .ws {
+        overflow: hidden;
+      }
+      .work-strip img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        display: block;
+      }
+      @media (max-width: 760px) {
+        .work-strip {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      /* ------- CONTACT ------- */
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+      }
+      .contact-aside h2 {
+        font-size: clamp(2.25rem, 5vw, 4rem);
+        margin-bottom: 1.5rem;
+      }
+      .contact-aside p {
+        color: var(--muted);
+        font-size: 1.1rem;
+        line-height: 1.7;
+        max-width: 28rem;
+        margin-bottom: 2.5rem;
+      }
+      .c-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-family: var(--font-mono);
+        font-size: 0.95rem;
+      }
+      .c-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--border);
+        padding: 0.75rem 0;
+        gap: 1rem;
+      }
+      .c-link .lbl {
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-size: 0.75rem;
+        flex-shrink: 0;
+      }
+      .c-link .val {
+        color: var(--fg);
+        transition: color 0.3s;
+        text-align: right;
+        word-break: break-all;
+      }
+      .c-link:hover .val {
+        color: var(--accent);
+      }
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      .field input,
+      .field textarea {
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid var(--border);
+        padding: 0.75rem 0;
+        font-family: inherit;
+        font-size: 1rem;
+        color: var(--fg);
+        outline: none;
+        transition: border-color 0.3s;
+      }
+      .field input:focus,
+      .field textarea:focus {
+        border-color: var(--accent);
+      }
+      .field textarea {
+        resize: none;
+      }
+      .contact-form .btn {
+        align-self: flex-start;
+        margin-top: 0.5rem;
+      }
+      .form-note {
+        font-size: 0.85rem;
+        color: var(--muted);
+      }
+      .form-note a {
+        color: var(--accent);
+      }
+      @media (max-width: 900px) {
+        .contact-grid {
+          grid-template-columns: 1fr;
+          gap: 3rem;
+        }
+      }
+
+      /* ------- PASSWORD / SECURE ACCESS ------- */
+      .btn-cv {
+        opacity: 0.55;
+      }
+      .btn-cv[data-unlocked="true"] {
+        opacity: 1;
+      }
+      .secure-access {
+        margin-top: 4rem;
+        border: 1px dashed var(--accent);
+        border-radius: 1rem;
+        padding: 2rem;
+        background: var(--surface);
+      }
+      .secure-card {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .secure-info {
+        max-width: 24rem;
+      }
+      .secure-info h3 {
+        font-size: 1.45rem;
+        margin-bottom: 0.6rem;
+      }
+      .secure-info p {
+        color: var(--muted);
+        font-size: 0.95rem;
+        line-height: 1.65;
+      }
+      .secure-form {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.75rem;
+        flex: 1;
+        min-width: 20rem;
+        max-width: 26rem;
+      }
+      .secure-form input[type="password"] {
+        flex: 1;
+        min-width: 10rem;
+        background: transparent;
+        border-bottom: 1px solid var(--border);
+        padding: 0.7rem 0.25rem;
+        font-family: var(--font-mono);
+        font-size: 1rem;
+        color: var(--fg);
+        outline: none;
+        transition: border-color 0.3s;
+      }
+      .secure-form input[type="password"]:focus {
+        border-color: var(--accent);
+      }
+      .secure-form input[type="password"].error {
+        border-color: #ef4444;
+      }
+      .secure-hint {
+        width: 100%;
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        color: var(--muted);
+      }
+      .secure-hint .lbl {
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+      .secure-unlocked {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1rem;
+      }
+      .secure-ok {
+        color: #22c55e;
+        font-weight: 600;
+      }
+      @media (max-width: 640px) {
+        .secure-form {
+          min-width: 100%;
+        }
+      }
+
+      /* ------- FOOTER ------- */
+      .footer {
+        border-top: 1px solid var(--border);
+        padding: 2.5rem 0;
+      }
+      .footer-inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+      .footer-inner a:hover {
+        color: var(--accent);
+      }
+
+      /* ------- BACK TO TOP ------- */
+      .to-top {
+        position: fixed;
+        bottom: 1.5rem;
+        right: 1.5rem;
+        z-index: 90;
+        width: 46px;
+        height: 46px;
+        border-radius: 9999px;
+        background: var(--accent);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(12px);
+        transition: all 0.35s;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      }
+      .to-top.visible {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+      }
+      .to-top:hover {
+        background: var(--accent-hover);
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .to-top {
+          transition: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="#top">Reuben<span>.</span>Nyaberi</a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" data-scroll>About</a></li>
+          <li><a href="#disciplines" data-scroll>Disciplines</a></li>
+          <li><a href="#work" data-scroll>Work</a></li>
+          <li><a href="#experience" data-scroll>Experience</a></li>
+          <li><a href="#testimonials" data-scroll>Testimonials</a></li>
+          <li><a href="#contact" data-scroll>Contact</a></li>
+        </ul>
+        <div class="nav-right">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">◐</button>
+          <a class="nav-cta" href="#contact">Let's talk</a>
+          <button class="nav-burger" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="container">
+        <p class="eyebrow">ICT · Software · Data</p>
+        <h1>Reuben<br />Nyaberi</h1>
+        <p class="hero-role">ICT &amp; Software / Data Professional — 7+ years</p>
+        <div class="availability"><span class="dot"></span>Available for freelance projects, data dashboards &amp; IT support</div>
+        <div class="hero-grid-bottom">
+          <p class="hero-lead">
+            I build full-stack products, analyse data for real decisions and keep the systems
+            underneath running — across government, hospitality, education and manufacturing.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Start a project</a>
+            <a class="btn btn-ghost btn-cv" href="REUBEN_NYABERI_SIOJA CURRICULUM VITAE.pdf" download data-role="download-cv">Download CV 🔒</a>
+            <a class="btn btn-ghost" href="#work">View my work</a>
+          </div>
+        </div>
+        <div class="hero-meta">
+          <span>Mombasa, Kenya</span>
+          <span>ReuTech Solutions</span>
+          <span>CheckME Solutions</span>
+          <span>Ministry of Education</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-side reveal">
+            <p class="eyebrow">About</p>
+            <div class="about-portrait">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=700&q=80"
+                alt="Portrait placeholder for Reuben Nyaberi"
+              />
+            </div>
+            <p class="about-cap">ICT · Software · Data — based on the Kenyan coast</p>
+          </div>
+          <div class="about-main reveal">
+            <h2>
+              A results-driven ICT &amp; software professional with 7+ years across government,
+              hospitality, education and manufacturing.
+            </h2>
+            <p>
+              I'm Reuben Nyaberi (Sioja), a developer and operations professional based in Mombasa,
+              Kenya, along the Kilifi coast. I run <strong>ReuTech Solutions</strong> and
+              <strong>CheckME Solutions</strong> — building production software for the Kenyan
+              market: rental management, retail, school and college systems — while also working on
+              data analysis, database management and enterprise systems administration.
+            </p>
+            <p>
+              Alongside building products, I'm an ICT Officer with Kenya's Ministry of Education and
+              have hands-on experience in hospitality systems (Opera, Fidelio, Cloudbeds), POS
+              platforms, and remote technical support. I don't treat these as separate lanes — a
+              good product needs the software built right, the data read correctly, and the
+              infrastructure underneath kept reliable. That's the work I do.
+            </p>
+            <div>
+              <span class="about-brand">ReuTech Solutions</span>
+              <span class="about-brand">CheckME Solutions</span>
+              <span class="about-brand">Ministry of Education</span>
+            </div>
+            <div class="about-stats">
+              <div class="stat">
+                <b>7+</b>
+                <span>Years of experience</span>
+              </div>
+              <div class="stat">
+                <b>10+</b>
+                <span>Systems built &amp; deployed</span>
+              </div>
+              <div class="stat">
+                <b>4</b>
+                <span>Sectors served</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISCIPLINES -->
+    <section class="section" id="disciplines">
+      <div class="container">
+        <p class="eyebrow reveal">What I do</p>
+        <h2 class="section-title reveal">Six disciplines, one way of thinking.</h2>
+        <div class="disciplines" style="margin-top: 3rem">
+          <div class="discipline-row reveal">
+            <button class="discipline-head">
+              <span class="d-num">01</span>
+              <span class="d-title">Software Development</span>
+              <span class="d-icon">+</span>
+            </button>
+            <div class="d-body">
+              <div class="d-inner">
+                <p class="d-summary">
+                  Full-stack products built to run in production — from student portals to rental,
+                  retail and management systems.
+                </p>
+                <ul class="d-list">
+                  <li>HTML / CSS / JavaScript &amp; React</li>
+                  <li>Node.js &amp; REST APIs</li>
+                  <li>Firebase (Auth, Firestore, Hosting)</li>
+                  <li>Payment &amp; compliance integrations</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="discipline-row reveal">
+            <button class="discipline-head">
+              <span class="d-num">02</span>
+              <span class="d-title">Data Analysis</span>
+              <span class="d-icon">+</span>
+            </button>
+            <div class="d-body">
+              <div class="d-inner">
+                <p class="d-summary">
+                  Turning raw operational and public data into decisions people can act on.
+                </p>
+                <ul class="d-list">
+                  <li>Excel &amp; Power BI reporting</li>
+                  <li>SQL database management</li>
+                  <li>SPSS statistical analysis</li>
+                  <li>Python analysis</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="discipline-row reveal">
+            <button class="discipline-head">
+              <span class="d-num">03</span>
+              <span class="d-title">IT Support &amp; Infrastructure</span>
+              <span class="d-icon">+</span>
+            </button>
+            <div class="d-body">
+              <div class="d-inner">
+                <p class="d-summary">
+                  Keeping the systems underneath the software reliable — remote and on-site.
+                </p>
+                <ul class="d-list">
+                  <li>Hardware &amp; software troubleshooting</li>
+                  <li>Systems diagnostics &amp; maintenance</li>
+                  <li>Hospitality POS/PMS platforms</li>
+                  <li>Cybersecurity, backups &amp; antivirus</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="discipline-row reveal">
+            <button class="discipline-head">
+              <span class="d-num">04</span>
+              <span class="d-title">Enterprise &amp; Admin Systems</span>
+              <span class="d-icon">+</span>
+            </button>
+            <div class="d-body">
+              <div class="d-inner">
+                <p class="d-summary">
+                  Deploying and administering the platforms businesses run their operations on.
+                </p>
+                <ul class="d-list">
+                  <li>ERP integration &amp; QA</li>
+                  <li>Hotel management (Opera, Fidelio, Cloudbeds)</li>
+                  <li>POS systems (Micros, Toast)</li>
+                  <li>Office 365 &amp; Google Workspace</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="discipline-row reveal">
+            <button class="discipline-head">
+              <span class="d-num">05</span>
+              <span class="d-title">Cloud &amp; Deployment</span>
+              <span class="d-icon">+</span>
+            </button>
+            <div class="d-body">
+              <div class="d-inner">
+                <p class="d-summary">
+                  Deploying and hosting products on infrastructure that scales sensibly.
+                </p>
+                <ul class="d-list">
+                  <li>Vercel &amp; Render deployment</li>
+                  <li>Firebase Hosting / Firestore</li>
+                  <li>Cloud storage &amp; backups</li>
+                  <li>Network fundamentals</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="discipline-row reveal">
+            <button class="discipline-head">
+              <span class="d-num">06</span>
+              <span class="d-title">Digital &amp; Support</span>
+              <span class="d-icon">+</span>
+            </button>
+            <div class="d-body">
+              <div class="d-inner">
+                <p class="d-summary">
+                  Digital content, customer support and training that keeps systems in active use.
+                </p>
+                <ul class="d-list">
+                  <li>Digital content &amp; social media</li>
+                  <li>Customer service &amp; support</li>
+                  <li>Staff ICT training</li>
+                  <li>Records &amp; file management</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK / PROJECTS -->
+    <section class="section" id="work">
+      <div class="container">
+        <p class="eyebrow reveal">Selected Work</p>
+        <h2 class="section-title reveal">Products built, shipped and maintained.</h2>
+        <div class="work-head reveal">
+          <p class="section-desc" style="margin-top: 0">
+            Production systems across web apps, data, retail and education — live and in use.
+          </p>
+          <div class="filters" id="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+            <button class="filter-btn" data-filter="data">Data</button>
+            <button class="filter-btn" data-filter="retail">Retail &amp; POS</button>
+            <button class="filter-btn" data-filter="education">Education</button>
+          </div>
+        </div>
+        <div id="projectList" style="margin-top: 1.5rem">
+          <button class="project-row reveal show" data-project="church" data-cat="web">
+            <span class="p-num">01</span>
+            <span class="p-name">Christ Embassy Website &amp; Admin Portal</span>
+            <span class="p-cat">Web App</span>
+            <span class="p-view">View case study →</span>
+          </button>
+          <button class="project-row reveal show" data-project="npc" data-cat="education">
+            <span class="p-num">02</span>
+            <span class="p-name">North Coast Prime College — Student Portal</span>
+            <span class="p-cat">Education</span>
+            <span class="p-view">View case study →</span>
+          </button>
+          <button class="project-row reveal show" data-project="checkmerent" data-cat="web">
+            <span class="p-num">03</span>
+            <span class="p-name">CheckMeRent — Rental Management</span>
+            <span class="p-cat">Web App</span>
+            <span class="p-view">View case study →</span>
+          </button>
+          <button class="project-row reveal show" data-project="sacco" data-cat="data">
+            <span class="p-num">04</span>
+            <span class="p-name">SACCO &amp; Microfinance System</span>
+            <span class="p-cat">Data &amp; Finance</span>
+            <span class="p-view">View case study →</span>
+          </button>
+          <button class="project-row reveal show" data-project="rental" data-cat="web">
+            <span class="p-num">05</span>
+            <span class="p-name">Rental Management System</span>
+            <span class="p-cat">Web App</span>
+            <span class="p-view">View case study →</span>
+          </button>
+          <button class="project-row reveal show" data-project="pharmacy" data-cat="retail">
+            <span class="p-num">06</span>
+            <span class="p-name">CheckME Pharmacy POS</span>
+            <span class="p-cat">Retail &amp; POS</span>
+            <span class="p-view">View case study →</span>
+          </button>
+          <button class="project-row reveal show" data-project="analytics" data-cat="data">
+            <span class="p-num">07</span>
+            <span class="p-name">Data Analytics &amp; Reporting</span>
+            <span class="p-cat">Data</span>
+            <span class="p-view">View case study →</span>
+          </button>
+          <button class="project-row reveal show" data-project="hospitality" data-cat="retail">
+            <span class="p-num">08</span>
+            <span class="p-name">Hospitality Systems Support</span>
+            <span class="p-cat">Hospitality</span>
+            <span class="p-view">View case study →</span>
+          </button>
+          <button class="project-row reveal show" data-project="edusys" data-cat="education">
+            <span class="p-num">09</span>
+            <span class="p-name">CheckME EduSys — College ERP</span>
+            <span class="p-cat">Education</span>
+            <span class="p-view">View case study →</span>
+          </button>
+          <button class="project-row reveal show" data-project="checkme" data-cat="web">
+            <span class="p-num">10</span>
+            <span class="p-name">CheckME Solutions — Brand Suite</span>
+            <span class="p-cat">Web App</span>
+            <span class="p-view">View case study →</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK IMAGE STRIP -->
+    <section class="section" style="border-top: 0; padding-top: 0">
+      <div class="container">
+        <div class="work-strip reveal">
+          <div class="ws">
+            <img
+              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80"
+              alt="Code on a screen"
+            />
+          </div>
+          <div class="ws">
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80"
+              alt="Data analytics dashboard"
+            />
+          </div>
+          <div class="ws">
+            <img
+              src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80"
+              alt="Artificial intelligence visualization"
+            />
+          </div>
+          <div class="ws">
+            <img
+              src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=600&q=80"
+              alt="Laptop with development work"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section class="section" id="stack">
+      <div class="container">
+        <p class="eyebrow reveal">Toolkit</p>
+        <h2 class="section-title reveal">What I work with.</h2>
+        <div class="stack-grid reveal" style="margin-top: 3rem">
+          <div class="stack-cell">
+            <h3>Front End</h3>
+            <ul>
+              <li>HTML / CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Tailwind</li>
+            </ul>
+          </div>
+          <div class="stack-cell">
+            <h3>Back End &amp; Data</h3>
+            <ul>
+              <li>Node.js</li>
+              <li>REST APIs</li>
+              <li>Firebase / Firestore</li>
+              <li>SQL &amp; MongoDB</li>
+            </ul>
+          </div>
+          <div class="stack-cell">
+            <h3>Analysis</h3>
+            <ul>
+              <li>Excel &amp; Power BI</li>
+              <li>SPSS</li>
+              <li>Python</li>
+              <li>Data modelling</li>
+            </ul>
+          </div>
+          <div class="stack-cell">
+            <h3>Enterprise</h3>
+            <ul>
+              <li>Opera / Fidelio / Cloudbeds</li>
+              <li>Micros / Toast POS</li>
+              <li>Office 365 &amp; Google</li>
+              <li>ERP &amp; CRM</li>
+            </ul>
+          </div>
+          <div class="stack-cell">
+            <h3>Cloud &amp; Deploy</h3>
+            <ul>
+              <li>Vercel</li>
+              <li>Render</li>
+              <li>Firebase</li>
+              <li>Cloud storage</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-side reveal">
+            <p class="eyebrow">Experience</p>
+            <h2 class="section-title">Where I've worked.</h2>
+          </div>
+          <div class="about-main reveal">
+            <div>
+              <div class="list-row">
+                <div class="list-head">
+                  <h3>ICT Officer (Internship)</h3>
+                  <span class="list-period">2026</span>
+                </div>
+                <p class="list-org">Ministry of Education, Republic of Kenya — Kilifi County</p>
+                <ul class="list-points">
+                  <li>Handled walk-in clients and resolved complaints across KNEC, Ministry and customer enquiries</li>
+                  <li>Executed scheduled preventive ICT maintenance, reducing unplanned downtime</li>
+                  <li>Delivered hands-on ICT integration training to 20+ educators</li>
+                  <li>Administered antivirus, managed backups and monitored network access</li>
+                </ul>
+                <p class="list-loc">Mombasa / Kilifi coastal region</p>
+              </div>
+              <div class="list-row">
+                <div class="list-head">
+                  <h3>Operations Supervisor</h3>
+                  <span class="list-period">2023 – 2025</span>
+                </div>
+                <p class="list-org">Lambada Holiday Resort — Mombasa</p>
+                <ul class="list-points">
+                  <li>Supervised daily operations across front desk, housekeeping, F&amp;B and maintenance</li>
+                  <li>Allocated shifts and duty rosters for 15+ staff</li>
+                  <li>Monitored KPIs and conducted performance reviews</li>
+                </ul>
+                <p class="list-loc">Mombasa, Kenya</p>
+              </div>
+              <div class="list-row">
+                <div class="list-head">
+                  <h3>Quality Assurance &amp; ICT Analyst</h3>
+                  <span class="list-period">Jun 2023 – Dec 2023</span>
+                </div>
+                <p class="list-org">Mzuri Sweets Ltd — Mombasa</p>
+                <ul class="list-points">
+                  <li>Automated digital QA reporting, reducing report generation time by ~60%</li>
+                  <li>Integrated QA tracking modules with the company's ERP system</li>
+                  <li>Used SPSS and Excel to identify production quality trends</li>
+                </ul>
+                <p class="list-loc">Mombasa, Kenya</p>
+              </div>
+              <div class="list-row">
+                <div class="list-head">
+                  <h3>ICT Specialist &amp; Social Media Manager</h3>
+                  <span class="list-period">2022 – 2024</span>
+                </div>
+                <p class="list-org">Christ Embassy Sanctuary — Mombasa</p>
+                <ul class="list-points">
+                  <li>Provided end-to-end ICT support including AV, computers and internet infrastructure</li>
+                  <li>Managed social media and produced digital content, growing community engagement</li>
+                  <li>Trained volunteers on digital tools and software</li>
+                </ul>
+                <p class="list-loc">Mombasa, Kenya</p>
+              </div>
+              <div class="list-row">
+                <div class="list-head">
+                  <h3>ICT Remote Support Assistant</h3>
+                  <span class="list-period">2022 – 2024</span>
+                </div>
+                <p class="list-org">Nesbony College — Mombasa</p>
+                <ul class="list-points">
+                  <li>Provided remote technical support for front desk and administrative systems</li>
+                  <li>Reduced system downtime through proactive monitoring and rapid fault resolution</li>
+                  <li>Strengthened cybersecurity posture with updated protocols and staff training</li>
+                </ul>
+                <p class="list-loc">Mombasa, Kenya</p>
+              </div>
+              <div class="list-row">
+                <div class="list-head">
+                  <h3>Founder &amp; Developer</h3>
+                  <span class="list-period">Current</span>
+                </div>
+                <p class="list-org">ReuTech Solutions · CheckME Solutions</p>
+                <ul class="list-points">
+                  <li>Building production SaaS for the Kenyan market — rental, retail, school and college systems</li>
+                  <li>Independent full-stack development and technical consulting</li>
+                </ul>
+                <p class="list-loc">Mombasa, Kenya</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <p class="eyebrow reveal">Testimonials</p>
+        <h2 class="section-title reveal">What people say.</h2>
+        <div class="testi-grid">
+          <div class="testi-card reveal">
+            <p class="testi-quote">
+              “Reuben rebuilt our student portal and handled the whole rollout — teachers picked
+              it up immediately and it's been running smoothly since day one.”
+            </p>
+            <div class="testi-meta">
+              <span class="testi-name">College Administrator</span>
+              <span class="testi-org">North Coast Prime College</span>
+            </div>
+          </div>
+          <div class="testi-card reveal">
+            <p class="testi-quote">
+              “He digitised our QA reporting and cut the time it took to generate a report by
+              more than half. The data we actually rely on is now clean and readable.”
+            </p>
+            <div class="testi-meta">
+              <span class="testi-name">Operations Manager</span>
+              <span class="testi-org">Mzuri Sweets Ltd</span>
+            </div>
+          </div>
+          <div class="testi-card reveal">
+            <p class="testi-quote">
+              “Reliable technical support — when a system went down he sorted it fast and then
+              trained our staff so it wouldn't happen again.”
+            </p>
+            <div class="testi-meta">
+              <span class="testi-name">Institution Contact</span>
+              <span class="testi-org">Nesbony College</span>
+            </div>
+          </div>
+        </div>
+        <p class="testi-note reveal">
+          Placeholder quotes — replace with real client references or short quotes when you have
+          permission.
+        </p>
+      </div>
+    </section>
+
+    <!-- HOW I CAN HELP -->
+    <section class="section" id="services">
+      <div class="container">
+        <p class="eyebrow reveal">Services</p>
+        <h2 class="section-title reveal">How I can help.</h2>
+        <div class="help-grid" style="margin-top: 3rem">
+          <div class="help-card reveal">
+            <div class="hc-img">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Data analytics" />
+            </div>
+            <div class="hc-body">
+              <span class="hc-num">01</span>
+              <h3>Web &amp; Software Development</h3>
+              <p class="hc-desc">A business needs an online presence or an internal tool that actually works.</p>
+              <p class="hc-foot">Fast, production-ready websites and apps — portals, management systems, POS and dashboards.</p>
+              <a class="hc-link" href="#contact">Start a project →</a>
+            </div>
+          </div>
+          <div class="help-card reveal">
+            <div class="hc-img">
+              <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?auto=format&fit=crop&w=800&q=80" alt="Data analysis" />
+            </div>
+            <div class="hc-body">
+              <span class="hc-num">02</span>
+              <h3>Data Analysis &amp; Reporting</h3>
+              <p class="hc-desc">Data exists but isn't structured for decisions.</p>
+              <p class="hc-foot">Clean, readable reporting and dashboards built on Excel, Power BI, SQL and SPSS.</p>
+              <a class="hc-link" href="#contact">Request analysis →</a>
+            </div>
+          </div>
+          <div class="help-card reveal">
+            <div class="hc-img">
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="IT support" />
+            </div>
+            <div class="hc-body">
+              <span class="hc-num">03</span>
+              <h3>IT Support &amp; Maintenance</h3>
+              <p class="hc-desc">Systems go down and nobody in-house can diagnose why.</p>
+              <p class="hc-foot">Remote and on-site troubleshooting across software, POS/PMS and general IT.</p>
+              <a class="hc-link" href="#contact">Get support →</a>
+            </div>
+          </div>
+          <div class="help-card reveal">
+            <div class="hc-img">
+              <img src="https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?auto=format&fit=crop&w=800&q=80" alt="Enterprise systems" />
+            </div>
+            <div class="hc-body">
+              <span class="hc-num">04</span>
+              <h3>Enterprise &amp; Admin Systems</h3>
+              <p class="hc-desc">Managing the platforms a business runs its operations on.</p>
+              <p class="hc-foot">Hotel PMS, POS platforms, ERP integration, database management and records.</p>
+              <a class="hc-link" href="#contact">Discuss systems →</a>
+            </div>
+          </div>
+          <div class="help-card reveal">
+            <div class="hc-img">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Cloud deployment" />
+            </div>
+            <div class="hc-body">
+              <span class="hc-num">05</span>
+              <h3>Cloud &amp; Deployment</h3>
+              <p class="hc-desc">An app needs to be hosted, monitored and kept online affordably.</p>
+              <p class="hc-foot">Deployment on Vercel, Render and Firebase with sensible backups and storage.</p>
+              <a class="hc-link" href="#contact">Deploy your app →</a>
+            </div>
+          </div>
+          <div class="help-card reveal">
+            <div class="hc-img">
+              <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80" alt="Digital content and support" />
+            </div>
+            <div class="hc-body">
+              <span class="hc-num">06</span>
+              <h3>Digital Content &amp; Training</h3>
+              <p class="hc-desc">Digital skills and content that keep systems in active use.</p>
+              <p class="hc-foot">Social media and digital content, plus hands-on staff ICT training.</p>
+              <a class="hc-link" href="#contact">Work with me →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-aside reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Have a problem worth solving?</h2>
+            <p>
+              Let's build something useful — a product, a dashboard, an automation, or get your
+              systems running smoothly.
+            </p>
+            <div class="c-links">
+              <a class="c-link" href="mailto:reubennyaberi96@gmail.com">
+                <span class="lbl">Email</span>
+                <span class="val">reubennyaberi96@gmail.com</span>
+              </a>
+              <a class="c-link" href="https://wa.me/254710164190" target="_blank" rel="noopener">
+                <span class="lbl">WhatsApp</span>
+                <span class="val">+254 710 164190</span>
+              </a>
+              <a class="c-link" href="https://linkedin.com/in/reuben-nyaberi-09822020" target="_blank" rel="noopener">
+                <span class="lbl">LinkedIn</span>
+                <span class="val">linkedin.com/in/reuben-nyaberi-09822020</span>
+              </a>
+              <a class="c-link" href="https://reubennyaberi.com" target="_blank" rel="noopener">
+                <span class="lbl">Web</span>
+                <span class="val">reubennyaberi.com</span>
+              </a>
+              <a class="c-link btn-cv" href="REUBEN_NYABERI_SIOJA CURRICULUM VITAE.pdf" download data-role="download-cv">
+                <span class="lbl">Resume</span>
+                <span class="val">Download CV 🔒</span>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form reveal" id="contactForm" action="#" method="POST">
+            <div class="field">
+              <input type="text" id="cfName" name="name" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <input type="email" id="cfEmail" name="email" placeholder="Your email" required />
+            </div>
+            <div class="field">
+              <textarea id="cfMsg" name="message" rows="4" placeholder="What are you trying to build?" required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Send inquiry →</button>
+            <p class="form-note">
+              Sends straight to my inbox. If the email form isn't configured yet it falls back to
+              WhatsApp — either way you'll reach me at
+              <a href="mailto:reubennyaberi96@gmail.com">reubennyaberi96@gmail.com</a> or
+              <a href="https://wa.me/254710164190" target="_blank" rel="noopener">+254 710 164190</a>.
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!-- PASSWORD-PROTECTED RESUME ACCESS -->
+      <div class="secure-access reveal" id="secureAccess">
+        <div class="secure-card">
+          <div class="secure-info">
+            <span class="eyebrow">Private access</span>
+            <h3>Resume &amp; confidential documents</h3>
+            <p>
+              Enter the access code to unlock the CV and any private materials shared with you.
+            </p>
+          </div>
+          <div class="secure-form" id="secureForm">
+            <input
+              type="password"
+              id="pwInput"
+              placeholder="Access code"
+              autocomplete="off"
+              aria-label="Access code"
+            />
+            <button class="btn btn-primary" type="button" id="pwUnlock">Unlock</button>
+            <p class="secure-hint" id="pwHint" role="status">
+              <span class="lbl">Hint:</span> <span id="pwHintText"></span>
+            </p>
+          </div>
+          <div class="secure-unlocked" id="secureUnlocked" hidden>
+            <p class="secure-ok">✓ Access granted. Your downloads are now unlocked.</p>
+            <a class="btn btn-primary" href="REUBEN_NYABERI_SIOJA CURRICULUM VITAE.pdf" download data-role="download-cv">
+              Download CV ↓
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Reuben Nyaberi Sioja</span>
+        <span>ReuTech Solutions · CheckME Solutions</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <!-- CASE STUDY MODAL -->
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">Close ✕</button>
+      <div class="modal-inner" id="modalContent"></div>
+    </div>
+
+    <!-- BACK TO TOP -->
+    <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+    <script>
+      // Year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // ------- Theme toggle -------
+      var themeBtn = document.getElementById("themeToggle");
+      var html = document.documentElement;
+      function setTheme(t) {
+        html.setAttribute("data-theme", t);
+        themeBtn.textContent = t === "dark" ? "☾" : "☀";
+        try { localStorage.setItem("theme", t); } catch (e) {}
+      }
+      try {
+        setTheme(localStorage.getItem("theme") || "dark");
+      } catch (e) {
+        setTheme("dark");
+      }
+      themeBtn.addEventListener("click", function () {
+        setTheme(html.getAttribute("data-theme") === "dark" ? "light" : "dark");
+      });
+
+      // ------- Mobile nav -------
+      var navToggle = document.getElementById("navToggle");
+      var navLinks = document.getElementById("navLinks");
+      navToggle.addEventListener("click", function () {
+        var open = navLinks.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+      document.querySelectorAll("#navLinks a").forEach(function (a) {
+        a.addEventListener("click", function () {
+          navLinks.classList.remove("open");
+          navToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+
+      // ------- Active nav + scroll spy -------
+      var sections = ["about", "disciplines", "work", "experience", "testimonials", "contact"];
+      var navAnchors = {};
+      document.querySelectorAll("#navLinks a[data-scroll]").forEach(function (a) {
+        var id = a.getAttribute("href").replace("#", "");
+        navAnchors[id] = a;
+      });
+      var onScroll = function () {
+        var pos = window.scrollY + 120;
+        var current = "";
+        sections.forEach(function (id) {
+          var el = document.getElementById(id);
+          if (el && el.offsetTop <= pos) current = id;
+        });
+        Object.keys(navAnchors).forEach(function (id) {
+          navAnchors[id].classList.toggle("active", id === current);
+        });
+        document.getElementById("toTop").classList.toggle("visible", window.scrollY > 600);
+      };
+      document.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
+
+      // ------- Back to top -------
+      document.getElementById("toTop").addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      // ------- Reveal on scroll -------
+      var io = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("in");
+              io.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+      document.querySelectorAll(".reveal").forEach(function (el) {
+        io.observe(el);
+      });
+
+      // ------- Disciplines accordion -------
+      document.querySelectorAll(".discipline-head").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var row = btn.parentElement;
+          var wasOpen = row.classList.contains("open");
+          document.querySelectorAll(".discipline-row.open").forEach(function (r) {
+            r.classList.remove("open");
+          });
+          if (!wasOpen) row.classList.add("open");
+        });
+      });
+
+      // ------- Project filter -------
+      var filterBtns = document.querySelectorAll(".filter-btn");
+      var projectRows = document.querySelectorAll(".project-row");
+      filterBtns.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          filterBtns.forEach(function (b) { b.classList.remove("active"); });
+          btn.classList.add("active");
+          var f = btn.getAttribute("data-filter");
+          projectRows.forEach(function (row) {
+            var show = f === "all" || row.getAttribute("data-cat") === f;
+            row.classList.toggle("show", show);
+          });
+        });
+      });
+
+      // ---------- Projects data ----------
+      var projects = {
+        church: {
+          name: "Christ Embassy Sanctuary",
+          category: "Church Website & Admin Portal",
+          role: "Designer & Developer",
+          year: "Deployed 2024 · Live",
+          link: "https://christ-embassy-sanctuary.vercel.app",
+          img: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1000&q=80",
+          overview:
+            "A full multi-page church website featuring Home, About, Ministries, Centres, Events and Contact sections, deployed live on Vercel.",
+          problem:
+            "The church needed a professional online presence plus a way for administrators to manage content, events and member information without touching code.",
+          approach: [
+            "Designed and built a full multi-page responsive website",
+            "Built an integrated Admin Portal for content, events and member management",
+            "Implemented responsive design across desktop, tablet and mobile",
+            "Set up a continuous deployment pipeline on Vercel",
+          ],
+          solution:
+            "A live, self-manageable website and admin portal that the church team runs day to day, with seamless updates via continuous deployment.",
+          stack: ["HTML5", "CSS3", "JavaScript", "Vercel"],
+          results: [
+            "Live at christ-embassy-sanctuary.vercel.app",
+            "Admin portal at /admin",
+            "Fully responsive across devices",
+          ],
+        },
+        npc: {
+          name: "North Coast Prime College",
+          category: "Student Portal & Admin System",
+          role: "Full-Stack Developer",
+          year: "Deployed 2025 · Live",
+          link: "https://npc-ke.web.app",
+          img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80",
+          overview:
+            "A full-stack academic management platform for North Coast Prime College, a professional training institution in Mombasa, Kenya.",
+          problem:
+            "Learners had no single place to track progress, results and fees, and staff lacked a shared system to manage student records and enrolments.",
+          approach: [
+            "Built a secure Student Portal for course progress, results, fee statements, assignments and transcripts",
+            "Developed an Admin Portal for staff to manage records, enrolments, exams and content",
+            "Integrated authentication, password reset and role-based access (student vs admin)",
+            "Used Firebase for real-time database and hosting",
+          ],
+          solution:
+            "One platform connecting the full student lifecycle — secure logins, academic tracking and admin management — deployed on Firebase.",
+          stack: ["JavaScript", "Firebase", "Firestore", "Authentication", "Hosting"],
+          results: [
+            "Live at npc-ke.web.app",
+            "Student portal at /study, admin at /create",
+            "Real-time data sync via Firebase",
+          ],
+        },
+        checkmerent: {
+          name: "CheckMeRent",
+          category: "Rental & Property Management SaaS",
+          role: "Full-Stack Developer",
+          year: "Live · CheckME product suite",
+          link: "https://checkmerent.onrender.com",
+          img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1000&q=80",
+          overview:
+            "A rental and property management platform built for landlords and property managers — part of the CheckME Solutions product suite.",
+          problem:
+            "Several modules were reading and writing data independently, so updates in one area didn't reliably reflect in another, and key pages were still stub routes.",
+          approach: [
+            "Traced data flow across modules to find where state fell out of sync",
+            "Introduced cursor-based pagination for large tenant/unit lists",
+            "Added structured audit trails (UUIDs + timestamps)",
+            "Layered in Redis caching and a BullMQ queue to absorb load spikes",
+          ],
+          solution:
+            "A more consistent, production-ready platform: modules stay in sync and the system holds up under concurrent load.",
+          stack: ["React", "Node.js", "Redis", "BullMQ", "Render"],
+          results: [
+            "Stub routes converted into complete, working pages",
+            "Reduced redundant queries via caching",
+            "Resilient job handling under load",
+          ],
+        },
+        sacco: {
+          name: "SACCO & Microfinance System",
+          category: "Data & Finance Management",
+          role: "Developer · CheckME Solutions",
+          year: "Live demo on request",
+          link: null,
+          img: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1000&q=80",
+          overview:
+            "A SACCO and microfinance management system covering member registration, loan management, share contributions, repayment scheduling and financial statements.",
+          problem:
+            "SACCOs and microfinance groups needed a single platform to manage members, loans and shares reliably, with clear financial statements.",
+          approach: [
+            "Built member registration and profile management",
+            "Implemented loan application, approval and repayment scheduling",
+            "Tracked share contributions and balances",
+            "Generated financial statements for decision-making",
+          ],
+          solution:
+            "A focused management platform that keeps member, loan and share data in one consistent, auditable system.",
+          stack: ["Web App", "Database", "Finance Modelling"],
+          results: [
+            "Live demo available on request",
+            "Member, loan and share management in one system",
+            "Financial statement reporting",
+          ],
+        },
+        rental: {
+          name: "Rental Management System",
+          category: "Property & Tenancy Management",
+          role: "Developer · CheckME Solutions",
+          year: "Live demo on request",
+          link: null,
+          img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1000&q=80",
+          overview:
+            "A rental management system covering tenant onboarding, rent invoicing, M-Pesa payment tracking, maintenance requests and landlord dashboards.",
+          problem:
+            "Landlords and property managers lacked a simple way to track tenants, invoices and M-Pesa payments without spreadsheets.",
+          approach: [
+            "Built tenant onboarding and unit management",
+            "Implemented rent invoicing and M-Pesa payment tracking",
+            "Added maintenance request workflows",
+            "Designed landlord dashboards for a quick view of the portfolio",
+          ],
+          solution:
+            "A practical rental system that keeps tenants, invoicing and payments organised in one place.",
+          stack: ["Web App", "M-Pesa", "Dashboards"],
+          results: [
+            "Live demo available on request",
+            "Tenant onboarding + rent invoicing",
+            "M-Pesa payment tracking",
+          ],
+        },
+        pharmacy: {
+          name: "CheckME Pharmacy POS",
+          category: "Point of Sale & Compliance",
+          role: "Full-Stack Developer",
+          year: "Live product",
+          link: "https://checkme-pharmacy.web.app",
+          img: "https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=1000&q=80",
+          overview:
+            "A pharmacy point-of-sale system built around Kenyan tax and payments compliance — from KRA ETIMS to M-Pesa.",
+          problem:
+            "Pharmacies need every sale fast at the counter, compliant with KRA e-invoicing, and reconcilable at shift close — three requirements that usually pull a POS in different directions.",
+          approach: [
+            "Built a receipt engine with sequential invoice numbers and a dual-purpose KRA QR code",
+            "Supported A4 PDF and 58/80mm thermal receipt formats from the same data",
+            "Added a live, Socket.IO-driven shift-report view",
+            "Hardened the application layer with security best practices",
+          ],
+          solution:
+            "A POS where compliance, speed and accountability run through one consistent invoicing engine.",
+          stack: ["React", "Node.js", "Socket.IO", "M-Pesa", "KRA ETIMS"],
+          results: [
+            "Live at checkme-pharmacy.web.app",
+            "Real-time shift reporting",
+            "KRA ETIMS-compliant invoicing built in",
+          ],
+        },
+        analytics: {
+          name: "Data Analytics & Reporting",
+          category: "Business & Public-Sector Data",
+          role: "Data Analyst",
+          year: "Ongoing practice",
+          link: null,
+          img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80",
+          overview:
+            "Applied data analysis across business and public-sector contexts — from financial reconciliation to enrollment reporting and production QA.",
+          problem:
+            "Raw data existed but wasn't structured for review — cashbooks needed reconciling and operational figures needed to be turned into readable analysis.",
+          approach: [
+            "Cleaned and reconciled financial records into audit-ready entries",
+            "Structured operational and enrollment data for review",
+            "Used SPSS and Excel to model trends",
+            "Packaged findings into formatted reports for non-technical readers",
+          ],
+          solution:
+            "Clear, structured reporting that makes financial and operational positions legible at a glance.",
+          stack: ["Excel", "Power BI", "SQL", "SPSS", "Python"],
+          results: [
+            "Automated QA reporting at Mzuri Sweets (~60% faster)",
+            "Delivered structured, presentation-ready reports",
+          ],
+        },
+        hospitality: {
+          name: "Hospitality Systems Support",
+          category: "Hotel & POS Management",
+          role: "IT Support / Systems Specialist",
+          year: "Hands-on exposure",
+          link: null,
+          img: "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=80",
+          overview:
+            "Hands-on experience supporting and troubleshooting the point-of-sale and property-management systems hotels and hospitality operators run on.",
+          problem:
+            "Hospitality platforms like Opera, Fidelio and Cloudbeds sit at the centre of daily operations, so downtime has an immediate, visible impact on guests and staff.",
+          approach: [
+            "Applied IT support fundamentals to hospitality-specific POS and PMS platforms",
+            "Bridged front-of-house operational needs with back-end system behaviour",
+          ],
+          solution:
+            "A practical, systems-level understanding of the software hotels run their operations on.",
+          stack: ["Opera", "Fidelio", "Cloudbeds", "Micros", "Toast POS", "IT Support"],
+          results: ["Direct working exposure across major hospitality and POS platforms"],
+        },
+        edusys: {
+          name: "CheckME EduSys",
+          category: "College Management ERP",
+          role: "Product Architect / Developer",
+          year: "Phased build",
+          link: "https://checkme-edu-sys.vercel.app",
+          img: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=80",
+          overview:
+            "A college management ERP spanning Admin, Finance, Lecturer, Student and Library modules around a central Student Information System.",
+          problem:
+            "Colleges need one system handling admissions, staff operations and academic records without pieces drifting out of sync — with role-based access strict enough for a real institution.",
+          approach: [
+            "Modelled a 23-role RBAC and permissions system with a full audit trail",
+            "Designed a central SIS hub every module reads from and writes to",
+            "Sequenced the build into fully-scoped phases",
+            "Built the public site around a real programme catalogue with a working application flow",
+          ],
+          solution:
+            "A single ERP where admissions, academics and finance share one source of truth, built phase by phase.",
+          stack: ["React", "Node.js", "MongoDB", "RBAC", "Vercel"],
+          results: [
+            "Live at checkme-edu-sys.vercel.app",
+            "Role-based verification queues",
+            "Architecture ready for online classes and multi-campus",
+          ],
+        },
+        checkme: {
+          name: "CheckME Solutions",
+          category: "Digital Technology & IT Solutions Brand",
+          role: "Founder / Product Lead",
+          year: "Brand suite",
+          link: "https://checkme-solutions.vercel.app",
+          img: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1000&q=80",
+          overview:
+            "The umbrella brand for a suite of production SaaS products — rental, retail/POS, education and more — built primarily for the Kenyan market.",
+          problem:
+            "Off-the-shelf software either doesn't fit local payment and reporting realities (M-Pesa, KRA) or costs more than a small operator can sustain.",
+          approach: [
+            "Defined a standard, free-tier-friendly stack reused across every product",
+            "Built shared components once instead of per-product",
+            "Made M-Pesa and SMS integration a default, not an afterthought",
+          ],
+          solution:
+            "A growing suite of focused products that share infrastructure conventions, so each new build starts from a proven foundation.",
+          stack: ["Vercel", "Render", "Firebase", "M-Pesa", "Shared UI"],
+          results: [
+            "Multiple live products sharing one deployment pattern",
+            "Consistent, accessible UI across the suite",
+            "Lower infrastructure cost per product",
+          ],
+        },
+      };
+
+      // Render modal
+      function openProject(id) {
+        var p = projects[id];
+        if (!p) return;
+        var linkBlock = p.link
+          ? '<a href="' + p.link + '" target="_blank" rel="noopener">' + p.link.replace("https://", "") + "</a>"
+          : '<span class="muted">Live demo available on request</span>';
+        var approach =
+          "<div class='m-labelled'><h4>Approach</h4><ul class='m-list'>" +
+          p.approach.map(function (a) { return "<li>" + a + "</li>"; }).join("") +
+          "</ul></div>";
+        var results =
+          "<div class='m-labelled'><h4>Results</h4><ul class='m-list res'>" +
+          p.results.map(function (r) { return "<li>" + r + "</li>"; }).join("") +
+          "</ul></div>";
+        var tags =
+          "<div class='m-tags'>" +
+          p.stack.map(function (t) { return "<span class='m-tag'>" + t + "</span>"; }).join("") +
+          "</div>";
+
+        document.getElementById("modalContent").innerHTML =
+          "<div class='m-img'><img src='" + p.img + "' alt='" + p.name + "' /></div>" +
+          "<p class='eyebrow'>Case Study</p>" +
+          "<h3 class='m-title'>" + p.name + "</h3>" +
+          "<div class='m-meta'>" +
+          "<span>" + p.category + "</span>" +
+          "<span>" + p.role + "</span>" +
+          "<span>" + p.year + "</span>" +
+          "<span>" + linkBlock + "</span>" +
+          "</div>" +
+          "<div class='m-grid'>" +
+          "<div class='m-col-l'>" +
+          "<p class='m-text'>" + p.overview + "</p>" +
+          "<div class='m-labelled'><h4>Challenge</h4><p class='m-text muted'>" + p.problem + "</p></div>" +
+          approach +
+          "<div class='m-labelled'><h4>Solution</h4><p class='m-text'>" + p.solution + "</p></div>" +
+          "</div>" +
+          "<div class='m-col-s'>" +
+          tags +
+          results +
+          "</div>" +
+          "</div>";
+
+        document.getElementById("modal").classList.add("open");
+        document.body.classList.add("modal-open");
+        document.getElementById("modal").scrollTop = 0;
+      }
+
+      function closeModal() {
+        document.getElementById("modal").classList.remove("open");
+        document.body.classList.remove("modal-open");
+      }
+
+      document.querySelectorAll(".project-row").forEach(function (row) {
+        row.addEventListener("click", function () {
+          openProject(row.getAttribute("data-project"));
+        });
+      });
+      document.getElementById("modalClose").addEventListener("click", closeModal);
+      document.getElementById("modal").addEventListener("click", function (e) {
+        if (e.target === this) closeModal();
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") closeModal();
+      });
+
+      // Contact form — real email delivery via Formspree (free, no backend)
+      // Replace the form ID below with your own: https://formspree.io (create a form, copy its ID)
+      var FORMSPREE_FORM_ID = "YOUR_FORM_ID"; // e.g. "xkgewkan"
+
+      var contactForm = document.getElementById("contactForm");
+      contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var name = document.getElementById("cfName").value;
+        var email = document.getElementById("cfEmail").value;
+        var msg = document.getElementById("cfMsg").value;
+        var btn = contactForm.querySelector("button[type='submit']");
+        var original = btn.innerHTML;
+        btn.disabled = true;
+        btn.innerHTML = "Sending…";
+
+        if (FORMSPREE_FORM_ID === "YOUR_FORM_ID") {
+          // No Formspree ID configured yet — fall back to WhatsApp so it still works.
+          btn.disabled = false;
+          btn.innerHTML = original;
+          var fallback = encodeURIComponent("Project inquiry from " + name + " (" + email + ")\n\n" + msg);
+          window.location.href = "https://wa.me/254710164190?text=" + fallback;
+          return;
+        }
+
+        fetch("https://formspree.io/f/" + FORMSPREE_FORM_ID, {
+          method: "POST",
+          body: new FormData(contactForm),
+          headers: { Accept: "application/json" },
+        })
+          .then(function (response) {
+            if (response.ok) {
+              btn.innerHTML = "✓ Sent — thank you!";
+              contactForm.reset();
+            } else {
+              throw new Error("Request failed");
+            }
+          })
+          .catch(function () {
+            btn.innerHTML = "✕ Failed — try again";
+            btn.disabled = false;
+            setTimeout(function () { btn.innerHTML = original; }, 3000);
+          });
+      });
+
+      // ---------- Password-protected resume ----------
+      // CHANGE THIS to your own access code.
+      var CV_PASSWORD = "reubennyaberi2000";
+      var CV_HINT = "reubennyaberi2000";
+
+      var pwInput = document.getElementById("pwInput");
+      var pwUnlock = document.getElementById("pwUnlock");
+      var pwHint = document.getElementById("pwHintText");
+      var pwForm = document.getElementById("secureForm");
+      var pwUnlocked = document.getElementById("secureUnlocked");
+
+      function unlockCV() {
+        document.querySelectorAll('[data-role="download-cv"]').forEach(function (a) {
+          a.setAttribute("data-unlocked", "true");
+          a.removeAttribute("disabled");
+        });
+        if (pwForm) pwForm.hidden = true;
+        if (pwUnlocked) pwUnlocked.hidden = false;
+        if (pwInput) pwInput.classList.remove("error");
+        try { sessionStorage.setItem("cv_unlocked", "1"); } catch (e) {}
+      }
+
+      function tryUnlock() {
+        if (pwInput.value.trim().toLowerCase() === CV_PASSWORD) {
+          unlockCV();
+        } else {
+          pwInput.classList.add("error");
+          pwInput.value = "";
+          pwInput.placeholder = "Incorrect — try again";
+          pwInput.focus();
+        }
+      }
+
+      if (pwUnlock) pwUnlock.addEventListener("click", tryUnlock);
+      if (pwInput) {
+        pwInput.addEventListener("keydown", function (e) {
+          if (e.key === "Enter") tryUnlock();
+        });
+        if (pwHint) pwHint.textContent = CV_HINT;
+        var wasUnlocked = false;
+        try { wasUnlocked = sessionStorage.getItem("cv_unlocked") === "1"; } catch (e) {}
+        if (wasUnlocked) unlockCV();
+      }
+    </script>
+  </body>
+</html>
