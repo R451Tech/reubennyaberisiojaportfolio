@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reuben Nyaberi — Resume</title>
+    <meta name="description" content="Public resume of Reuben Nyaberi Sioja, ICT & data professional with 7+ years across government, hospitality, education and manufacturing." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #09090b;
+        --surface: rgba(39, 39, 42, 0.4);
+        --fg: #fafafa;
+        --muted: #a1a1aa;
+        --border: rgba(255, 255, 255, 0.1);
+        --accent: #8b5cf6;
+        --accent-hover: #a78bfa;
+        --font-body: "Inter", sans-serif;
+        --font-display: "Outfit", sans-serif;
+        --font-mono: "JetBrains Mono", monospace;
+        --content: 860px;
+        color-scheme: dark;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        background: var(--bg);
+        color: var(--fg);
+        font-family: var(--font-body);
+        line-height: 1.55;
+        -webkit-font-smoothing: antialiased;
+      }
+      a { color: inherit; text-decoration: none; }
+      .container {
+        width: 100%; max-width: var(--content); margin: 0 auto;
+        padding-left: 1.5rem; padding-right: 1.5rem;
+      }
+      .rs-nav {
+        border-bottom: 1px solid var(--border); padding: 1.25rem 0;
+        position: sticky; top: 0; background: rgba(9, 9, 11, 0.85);
+        backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); z-index: 10;
+      }
+      .rs-nav .container { display: flex; align-items: center; justify-content: space-between; }
+      .rs-nav .back { color: var(--muted); font-size: 0.9rem; transition: color 0.3s; }
+      .rs-nav .back:hover { color: var(--accent); }
+      .rs-nav .cta a { font-size: 0.9rem; color: var(--accent); }
+      .rs-head { padding: 3.5rem 0 1.5rem; border-bottom: 1px solid var(--border); }
+      .rs-head h1 { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.1; }
+      .rs-head .role { color: var(--accent); font-weight: 600; margin-top: 0.4rem; }
+      .rs-head .meta { color: var(--muted); font-family: var(--font-mono); font-size: 0.8rem; margin-top: 0.75rem; }
+      .rs-body { padding: 2.5rem 0 4rem; }
+      .section { margin-bottom: 2.5rem; }
+      .section h2 {
+        font-family: var(--font-display); font-size: 1.15rem; margin-bottom: 1rem;
+        display: flex; align-items: center; gap: 0.6rem;
+      }
+      .section h2::before { content: ""; width: 6px; height: 18px; background: var(--accent); border-radius: 2px; }
+      .rs-summary p { color: var(--muted); }
+      .chips { display: flex; flex-wrap: wrap; gap: 0.55rem; }
+      .chips span {
+        font-family: var(--font-mono); font-size: 0.74rem; color: var(--muted);
+        border: 1px solid var(--border); border-radius: 9999px; padding: 0.35rem 0.8rem;
+      }
+      .job { margin-bottom: 1.5rem; }
+      .job-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.4rem; }
+      .job-head h3 { font-size: 1.05rem; }
+      .job-head .org { color: var(--accent); font-size: 0.85rem; }
+      .job-head .period { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); }
+      ul.tick { list-style: none; margin-top: 0.6rem; display: flex; flex-direction: column; gap: 0.45rem; }
+      ul.tick li { display: flex; gap: 0.55rem; color: var(--muted); }
+      ul.tick li::before {
+        content: ""; width: 5px; height: 5px; border-radius: 50%; background: var(--accent);
+        flex-shrink: 0; margin-top: 0.55em;
+      }
+      .edu { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.4rem; border-top: 1px solid var(--border); padding: 0.9rem 0; }
+      .edu:first-of-type { border-top: 0; }
+      .edu .t { font-weight: 600; }
+      .edu .where { color: var(--muted); font-size: 0.85rem; }
+      .achievements { display: grid; grid-template-columns: 1fr; gap: 0.5rem; }
+      .achievements li { color: var(--muted); }
+      .rs-foot { border-top: 1px solid var(--border); padding: 2rem 0; display: flex; justify-content: center; gap: 0.75rem; }
+      .btn {
+        display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 1.4rem;
+        border-radius: 9999px; font-weight: 600; font-size: 0.9rem; transition: all 0.3s;
+      }
+      .btn-primary { background: var(--accent); color: #fff; }
+      .btn-primary:hover { background: var(--accent-hover); }
+      .btn-ghost { border: 1px solid var(--border); color: var(--fg); }
+      .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+      .note { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); text-align: center; margin-top: 1rem; }
+      @media print {
+        .rs-nav, .rs-foot { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="rs-nav">
+      <div class="container">
+        <a class="back" href="index.html">← Back to portfolio</a>
+        <span class="cta"><a href="index.html#contact">Contact Reuben</a></span>
+      </div>
+    </nav>
+
+    <header class="rs-head">
+      <div class="container">
+        <h1>Reuben Nyaberi Sioja</h1>
+        <p class="role">ICT &amp; Data Professional · Customer Service · Administrative Operations · Technical Support</p>
+        <p class="meta">Mombasa, Kenya · reubennyaberi96@gmail.com · linkedin.com/in/reuben-nyaberi-09822020</p>
+      </div>
+    </header>
+
+    <main class="rs-body">
+      <div class="container">
+
+        <section class="section rs-summary">
+          <h2>Professional Summary</h2>
+          <p>
+            Results-driven ICT and Administrative Operations professional with 7+ years of progressive experience
+            across government, hospitality, education and manufacturing. Proficient in IT support, data entry, data
+            analysis, database management and enterprise systems administration. Skilled in Hotel Management Systems
+            (Opera, Fidelio, Cloudbeds), financial reporting tools (QuickBooks, Excel) and collaborative cloud
+            platforms. Holds certifications in Cybersecurity, Data Analysis and IT Support.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>Core Competencies</h2>
+          <div class="chips">
+            <span>Administrative Support</span><span>Data Entry &amp; Validation</span>
+            <span>IT Support &amp; Troubleshooting</span><span>Data Analysis (SPSS / Excel)</span>
+            <span>Cybersecurity Fundamentals</span><span>Database Management (SQL)</span>
+            <span>Records &amp; File Management</span><span>Cloud Computing &amp; Storage</span>
+            <span>Hotel Management Systems</span><span>Financial Reporting</span>
+            <span>Digital Marketing &amp; Email</span><span>Inventory Management</span>
+            <span>Remote Technical Support</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Technical Skills</h2>
+          <div class="chips">
+            <span>Opera · Fidelio · Cloudbeds</span><span>Hardware/Software Support</span>
+            <span>Micros · Toast POS</span><span>Cybersecurity &amp; Backups</span>
+            <span>MS Office 365 · Google Workspace</span><span>Excel (Pivot,VLOOKUP) · SPSS</span>
+            <span>QuickBooks</span><span>ERP Integration &amp; QA Digitization</span>
+            <span>Social Media &amp; Email Marketing</span><span>AWS Basics · Firebase · Vercel · Render</span>
+            <span>Node.js · React · JavaScript</span><span>Remote Collaboration (Zoom, Teams, Slack)</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Professional Experience</h2>
+
+          <div class="job">
+            <div class="job-head">
+              <div>
+                <h3>ICT Officer <span class="org">(Internship)</span></h3>
+                <span class="org">Ministry of Education · Kilifi County, Kenya</span>
+              </div>
+              <span class="period">2026</span>
+            </div>
+            <ul class="tick">
+              <li>Respond to customer enquiries and handle walk-in clients at the Sub County offices.</li>
+              <li>Assist teachers and customers on KEMIS and Ministry websites; resolve complaints and respond to emails from KNEC and the Ministry.</li>
+              <li>Execute scheduled preventive maintenance of ICT equipment, reducing unplanned downtime.</li>
+              <li>Deliver hands-on ICT integration training to teachers, equipping 20+ educators with digital skills.</li>
+              <li>Enforce data security protocols, antivirus updates, system backups and network access monitoring.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="job-head">
+              <div>
+                <h3>Operations Supervisor</h3>
+                <span class="org">Lambada Holiday Resort · Mombasa, Kenya</span>
+              </div>
+              <span class="period">2023–2025</span>
+            </div>
+            <ul class="tick">
+              <li>Supervised daily operations across front desk, housekeeping, F&amp;B and maintenance.</li>
+              <li>Allocated shifts and rosters for 15+ staff, optimizing coverage across peak periods.</li>
+              <li>Monitored KPIs, conducted performance reviews and maintained compliance with hospitality and H&amp;S standards.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="job-head">
+              <div>
+                <h3>Restaurant Bookkeeper</h3>
+                <span class="org">Baraka Restaurant · Mombasa, Kenya</span>
+              </div>
+              <span class="period">2024–2025</span>
+            </div>
+            <ul class="tick">
+              <li>Managed end-of-day stock closings, financial reconciliation and cash handling.</li>
+              <li>Maintained daily expense records, purchase orders and supplier invoices in QuickBooks and Excel.</li>
+              <li>Produced weekly and monthly financial summaries supporting cost control.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="job-head">
+              <div>
+                <h3>Quality Assurance &amp; ICT Analyst</h3>
+                <span class="org">Mzuri Sweets Ltd · Mombasa, Kenya</span>
+              </div>
+              <span class="period">Jun 2023 – Dec 2023</span>
+            </div>
+            <ul class="tick">
+              <li>Automated digital QA reporting, eliminating manual paperwork and cutting report generation time by ~60%.</li>
+              <li>Integrated QA tracking modules with the company ERP for a unified data pipeline.</li>
+              <li>Used SPSS and Excel for statistical analysis to identify production quality trends.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="job-head">
+              <div>
+                <h3>ICT Specialist &amp; Social Media Manager</h3>
+                <span class="org">Christ Embassy Sanctuary · Mombasa, Kenya</span>
+              </div>
+              <span class="period">2022–2024</span>
+            </div>
+            <ul class="tick">
+              <li>Provided end-to-end ICT support including AV systems, computers and internet infrastructure.</li>
+              <li>Managed social media platforms, growing online community engagement.</li>
+              <li>Built internal ICT capacity by training volunteers on digital tools.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="job-head">
+              <div>
+                <h3>ICT Remote Support Assistant</h3>
+                <span class="org">Nesbony College · Mombasa, Kenya</span>
+              </div>
+              <span class="period">2022–2024</span>
+            </div>
+            <ul class="tick">
+              <li>Provided remote technical support for front desk and administrative systems.</li>
+              <li>Reduced system downtime through proactive monitoring and scheduled maintenance.</li>
+              <li>Strengthened cybersecurity posture with updated protocols and staff awareness sessions.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="job-head">
+              <div>
+                <h3>Concierge &amp; Customer Service Supervisor</h3>
+                <span class="org">Mtwapa Country Resort · Mombasa, Kenya</span>
+              </div>
+              <span class="period">2019–2021</span>
+            </div>
+            <ul class="tick">
+              <li>Delivered personalized concierge services including travel and activity coordination.</li>
+              <li>Supervised service standards and monitored customer satisfaction metrics.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Education &amp; Certifications</h2>
+          <div class="edu"><span class="t">Diploma — Information Communication Technology</span><span class="where">Ahmed Shahame Mwidani TV</span></div>
+          <div class="edu"><span class="t">Diploma — Hospitality Management</span><span class="where">Nesbony College</span></div>
+          <div class="edu"><span class="t">KCSE — Secondary Education</span><span class="where">St Augustine's Mirogi Boys High School</span></div>
+          <div class="edu"><span class="t">Computer Packages</span><span class="where">Certification</span></div>
+          <div class="chips" style="margin-top: 1rem">
+            <span>Cybersecurity</span><span>IT Support</span>
+            <span>Data Analysis using SPSS</span><span>Email Marketing</span>
+            <span>AI Prompting</span><span>Data Entry &amp; Records Management</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Key Achievements</h2>
+          <ul class="tick achievements">
+            <li>Digitized the QA reporting system at Mzuri Sweets Ltd, eliminating paper workflows and cutting report time by ~60%.</li>
+            <li>Integrated QA data with an ERP system, creating a seamless production-to-quality data pipeline.</li>
+            <li>Reduced system downtime at Nesbony College through proactive remote IT support and cybersecurity improvements.</li>
+            <li>Delivered ICT integration training to 20+ Ministry of Education teachers.</li>
+            <li>Built and maintained the Christ Embassy social media presence, growing audience engagement.</li>
+          </ul>
+        </section>
+
+      </div>
+    </main>
+
+    <footer class="rs-foot">
+      <div class="container" style="text-align:center">
+        <a class="btn btn-primary" href="index.html#contact">Contact Reuben</a>
+        <a class="btn btn-ghost" href="index.html">Back to portfolio</a>
+        <p class="note">References available on request. Full CV available via private access.</p>
+      </div>
+    </footer>
+  </body>
+</html>

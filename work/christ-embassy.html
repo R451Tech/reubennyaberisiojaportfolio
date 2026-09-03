@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Christ Embassy Sanctuary — Case Study · Reuben Nyaberi</title>
+    <meta name="description" content="Christ Embassy Sanctuary church website and admin portal case study by Reuben Nyaberi — a full multi-page site with a secure admin portal." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #09090b;
+        --surface: rgba(39, 39, 42, 0.4);
+        --fg: #fafafa;
+        --muted: #a1a1aa;
+        --border: rgba(255, 255, 255, 0.1);
+        --accent: #8b5cf6;
+        --accent-hover: #a78bfa;
+        --font-body: "Inter", sans-serif;
+        --font-display: "Outfit", sans-serif;
+        --font-mono: "JetBrains Mono", monospace;
+        --content: 860px;
+        color-scheme: dark;
+      }
+      html { scroll-behavior: smooth; }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        background: var(--bg);
+        color: var(--fg);
+        font-family: var(--font-body);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      a { color: inherit; text-decoration: none; }
+      img { display: block; max-width: 100%; }
+      .container {
+        width: 100%;
+        max-width: var(--content);
+        margin: 0 auto;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+      .cs-nav {
+        border-bottom: 1px solid var(--border);
+        padding: 1.25rem 0;
+        position: sticky;
+        top: 0;
+        background: rgba(9, 9, 11, 0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        z-index: 10;
+      }
+      .cs-nav .container { display: flex; align-items: center; justify-content: space-between; }
+      .cs-nav .back { color: var(--muted); font-size: 0.9rem; transition: color 0.3s; }
+      .cs-nav .back:hover { color: var(--accent); }
+      .cs-nav .tag { font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--muted); }
+      .cs-hero { padding: 4.5rem 0 3rem; border-bottom: 1px solid var(--border); }
+      .eyebrow {
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.24em;
+        color: var(--accent);
+        margin-bottom: 1rem;
+      }
+      .cs-hero h1 { font-family: var(--font-display); font-size: clamp(2.2rem, 6vw, 3.4rem); line-height: 1.1; margin-bottom: 1rem; }
+      .cs-hero .sub { color: var(--muted); font-size: 1.05rem; max-width: 40rem; }
+      .cs-meta { display: flex; flex-wrap: wrap; gap: 0.6rem 1.4rem; margin-top: 1.75rem; font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted); }
+      .cs-meta span b { color: var(--fg); font-weight: 600; }
+      .cs-links { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
+      .btn {
+        display: inline-flex; align-items: center; gap: 0.5rem;
+        padding: 0.8rem 1.4rem; border-radius: 9999px; font-weight: 600; font-size: 0.9rem;
+        transition: all 0.3s;
+      }
+      .btn-primary { background: var(--accent); color: #fff; }
+      .btn-primary:hover { background: var(--accent-hover); }
+      .btn-ghost { border: 1px solid var(--border); color: var(--fg); }
+      .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+      .cs-body { padding: 3.5rem 0 4rem; }
+      .block { margin-bottom: 3rem; }
+      .block h2 { font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 0.8rem; }
+      .block h2 .mono { color: var(--accent); font-family: var(--font-mono); font-size: 0.8rem; vertical-align: middle; margin-right: 0.6rem; letter-spacing: 0.15em; }
+      .block p { color: var(--muted); margin-bottom: 0.9rem; }
+      .block .img-wrap { border-radius: 1rem; overflow: hidden; border: 1px solid var(--border); margin: 1.25rem 0; }
+      ul.tick { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+      ul.tick li { display: flex; gap: 0.6rem; color: var(--muted); }
+      ul.tick li::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex-shrink: 0; margin-top: 0.5em; }
+      .stack-tags { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+      .stack-tags span { font-family: var(--font-mono); font-size: 0.75rem; border: 1px solid var(--border); border-radius: 9999px; padding: 0.4rem 0.85rem; color: var(--muted); }
+      .outcome { border-left: 3px solid var(--accent); padding-left: 1rem; color: var(--fg); font-weight: 500; }
+      .cs-footer { border-top: 1px solid var(--border); padding: 2.5rem 0; text-align: center; }
+      .cs-footer p { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.25rem; }
+      .cs-footer .btn { margin: 0 0.4rem; }
+      .cs-copy { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); margin-top: 1.5rem; }
+    </style>
+  </head>
+  <body>
+    <nav class="cs-nav">
+      <div class="container">
+        <a class="back" href="../index.html">← Back to portfolio</a>
+        <span class="tag">Case Study</span>
+      </div>
+    </nav>
+
+    <section class="cs-hero">
+      <div class="container">
+        <p class="eyebrow">Case Study · 01</p>
+        <h1>Christ Embassy Sanctuary</h1>
+        <p class="sub">A full multi-page church website with a dedicated admin portal, designed and deployed live on Vercel for Christ Embassy Sanctuary.</p>
+        <div class="cs-meta">
+          <span><b>Category:</b> Web App</span>
+          <span><b>Role:</b> Designer &amp; Developer</span>
+          <span><b>Year:</b> Deployed 2024</span>
+          <span><b>Status:</b> Live</span>
+        </div>
+        <div class="cs-links">
+          <a class="btn btn-primary" href="https://christ-embassy-sanctuary.vercel.app/" target="_blank" rel="noopener">View live →</a>
+          <a class="btn btn-ghost" href="https://christ-embassy-sanctuary.vercel.app/admin" target="_blank" rel="noopener">Admin portal</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-body">
+      <div class="container">
+        <div class="block">
+          <h2><span class="mono">01 /</span>Problem</h2>
+          <p>The church needed a professional online presence — plus a way for administrators to manage content, events and member information without touching code.</p>
+        </div>
+
+        <div class="block">
+          <h2><span class="mono">02 /</span>What was built</h2>
+          <ul class="tick">
+            <li>A full multi-page church website featuring Home, About, Ministries, Centres, Events and Contact sections.</li>
+            <li>A secure Admin Portal enabling church administrators to manage content, events and member information through a backend interface.</li>
+            <li>Responsive design working across desktop, tablet and mobile.</li>
+          </ul>
+          <div class="img-wrap"><img src="../proj-church.jpg" alt="Christ Embassy Sanctuary website preview" /></div>
+        </div>
+
+        <div class="block">
+          <h2><span class="mono">03 /</span>Stack used</h2>
+          <div class="stack-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Vercel</span>
+          </div>
+        </div>
+
+        <div class="block">
+          <h2><span class="mono">04 /</span>Outcome</h2>
+          <p class="outcome">Deployed and live in production, with a working admin portal that keeps the site up to date without code changes.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="cs-footer">
+      <div class="container">
+        <p>Have a similar project in mind?</p>
+        <a class="btn btn-primary" href="../index.html#contact">Start a project →</a>
+        <a class="btn btn-ghost" href="../index.html">Back to portfolio</a>
+        <p class="cs-copy">Reuben Nyaberi · CheckME Solutions</p>
+      </div>
+    </footer>
+  </body>
+</html>
